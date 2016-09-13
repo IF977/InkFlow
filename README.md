@@ -15,6 +15,6 @@
 
 ## Membros
 
-  1. Arthur Farias [anf2] - Desenvolvedor
+  1. Arthur Farias [anf2] - Gerente de Projeto
   2. Caio Oliveira [ccat] - Product Owner
-  3. Felipe Martins [fhrm] - Gerente de Projeto
+  3. Felipe Martins [fhrm] - Desenvolvedor
