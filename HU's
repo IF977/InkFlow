@@ -27,11 +27,9 @@
 27. Como Usuário Administrador, eu devo poder observar qual o grau de andamento (em porcentagem) dos KR, informado pelos Funcionários, para garantir o foco e o prazo do projeto.
 28. Como Usuário Administrador, eu devo poder observar qual o status de cada KR (Não Iniciado/Em Andamento/Terminado/Bloqueado), para garantir o foco e o prazo do projeto.
 29. Como Usuário Administrador, eu quero poder criar e alterar a minha Senha de Login, para garantir a segurança do meu perfil na aplicação.
-
 30. Como Usuário Administrador fechando a aplicação, eu quero ser perguntado para salvar se eu tiver feito qualquer alteração em meus dados desde a última gravação.
 31. Como Usuário Funcionário, eu devo ter uma visão clara, simples e objetiva dos Organogramas como um todo, para garantir a compreensão e a análise efetiva do andamento dos projetos.
 32. Como Usuário Funcionário, quando clicar em um nó do Organograma eu devo ter uma visão detalhada, fluida e paralela dos detalhes do mesmo nó, para garantir o alto desempenho dos resultados.
-
 33. Como Usuário Funcionário, eu não devo poder criar novos Organogramas, Líderes ou Equipes, para garantir os interesses do Usuário Administrador.
 34. Como Usuário Funcionário, devem estar claros para mim os Objetivos (OKR) que me foram alocados pelo Usuário Administrador, para que a eficiência do projeto seja priorizada.
 35. Como Usuário Funcionário, eu devo poder adicionar KR aos Objetivos (OKR), para criar interação com o projeto.
