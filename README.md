@@ -4,11 +4,13 @@ O projeto de uma Aplicação Web que veio para sanar o problema do NTI (Núcleo 
 ##Os problemas enfrentados pelo NTI são:
 
 •	Deficiência na comunicação visual, principalmente acerca de quais são os objetivos prioritários de cada projeto
+
 •	Falta de dinamismo no acompanhamento e clareza na compreensão dos OKR por parte dos funcionários
 
 ##Descrição:
 A aplicação consiste num sistema de controle-e-exibição de Organogramas, focados em OKR (Objective and Key Results) que são exibidos de maneira simples e objetiva, utilizando a mecânica de Collapsive Trees.
 Os Organogramas são compostos por 
+
 •	Líder do Projeto
 
 •	Equipes
