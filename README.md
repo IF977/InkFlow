@@ -4,6 +4,7 @@ O projeto de uma Aplicação Web que veio para sanar o problema do NTI (Núcleo 
 Os problemas enfrentados pelo NTI são:
 
 •	Deficiência na comunicação visual, principalmente acerca de quais são os objetivos prioritários de cada projeto.
+
 •	Falta de dinamismo no acompanhamento e clareza na compreensão dos OKR por parte dos funcionários.
 
 ## Descrição:
@@ -11,6 +12,7 @@ A aplicação consiste num sistema de controle-e-exibição de Organogramas, foc
 Os Organogramas são compostos por:
 
 •	Líder do Projeto
+
 •	Equipes 
 
 O Líder do Projeto é o nó-raiz na exibição da árvore, e todos os outros nós estão relacionados à categoria subsequente. O Líder é responsável por um numero X de Equipes, e cada Equipe tem um numero X de Membros.
