@@ -1,12 +1,8 @@
 # Projeto: Inkflow
 
 ## História dos Usuários
-...
-1. 
-Como Usuário Administrador
-eu devo ter uma visão clara, simples e objetiva dos Organogramas como um todo, 
-para garantir a compreensão e a análise efetiva do andamento dos projetos.
-...
+
+1.Como Usuário Administrador,eu devo ter uma visão clara, simples e objetiva dos Organogramas como um todo, para garantir a compreensão e a análise efetiva do andamento dos projetos.
 2. Como Usuário Administrador, quando clicar em um nó do Organograma eu devo ter uma visão detalhada, fluida e paralela dos detalhes do mesmo nó, para garantir o alto desempenho dos resultados.
 3. Como Usuário Administrador, eu quero criar um Novo Organograma
 4. Como Usuário Administrador, eu quero acessar um determinado Organograma pré-existente
