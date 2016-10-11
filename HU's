@@ -19,23 +19,32 @@ eu quero acessar um determinado Organograma pré-existente
 5. Como Usuário Administrador, 
 eu quero me cadastrar como Líder de um novo Organograma
 
-6. Como Usuário Administrador, eu quero adicionar uma Foto ao meu Card de Líder
+6. Como Usuário Administrador, 
+eu quero adicionar uma Foto ao meu Card de Líder
 
-7. Como Usuário Administrador, eu quero adicionar uma Descrição ao meu Card de Líder
+7. Como Usuário Administrador, 
+eu quero adicionar uma Descrição ao meu Card de Líder
 
-8. Como Usuário Administrador, eu quero adicionar uma Observação ao meu card de Líder
+8. Como Usuário Administrador, 
+eu quero adicionar uma Observação ao meu card de Líder
 
-9. Como Usuário Administrador, eu quero adicionar uma nova Equipe ao meu Organograma
+9. Como Usuário Administrador, 
+eu quero adicionar uma nova Equipe ao meu Organograma
 
-10. Como Usuário Administrador, eu quero excluir um determinado Organograma pré-existente
+10. Como Usuário Administrador, 
+eu quero excluir um determinado Organograma pré-existente
 
-11. Como Usuário Administrador, eu quero excluir ou editar a Foto do meu Card de Líder
+11. Como Usuário Administrador, 
+eu quero excluir ou editar a Foto do meu Card de Líder
 
-12. Como Usuário Administrador, eu quero excluir ou editar a Descrição do meu Card de Líder
+12. Como Usuário Administrador, 
+eu quero excluir ou editar a Descrição do meu Card de Líder
 
-13. Como Usuário Administrador, eu quero excluir ou editar Observações do meu Card de Líder
+13. Como Usuário Administrador, 
+eu quero excluir ou editar Observações do meu Card de Líder
 
-14. Como Usuário Administrador, eu quero excluir uma Equipe do meu Organograma
+14. Como Usuário Administrador, 
+eu quero excluir uma Equipe do meu Organograma
 
 15. Como Usuário Administrador excluindo uma Equipe de um Organograma, 
 eu quero ser perguntado se realmente tenho certeza de que desejo excluir essa equipe, e avisado de que o processo é irreversível, 
