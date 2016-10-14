@@ -1,8 +1,10 @@
-<h1>Inkflow!</h1>
+<font style = "font-family:'verdana'", color = 'purple'><h1>Welcome to Inkflow!</h1>
+
 
 <br />
 
-
-<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<%= button_to "Sign In", new_user_session_path, method: :get %>
+<br />
+<%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
 
 

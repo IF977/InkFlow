@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'presentation/tree'
+
 root 'welcome#index'
   get 'welcome/index'
 
