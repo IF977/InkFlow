@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :okrs do
+  	resources :krs
+  end
+  
   get 'contact/us'
 
   get 'presentation/tree'

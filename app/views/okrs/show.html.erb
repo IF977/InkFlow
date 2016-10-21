@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @okr.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @okr.description %>
+</p>
+
+<div id="id_wrapper">
+<%= render  @okr.krs %>
+	<div id="form">
+		<%= render "krs/form" %>
+	</div>
+</div>
+
+<%= link_to 'Edit', edit_okr_path(@okr) %> |
+<%= link_to 'Back', okrs_path %>

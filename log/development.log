@@ -3501,3 +3501,2630 @@ Processing by ContactController#us as HTML
 Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateOkrs (20161020224249)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "okrs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161020224249"]]
+  [1m[35m (163.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2016-10-20 19:43:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (32.9ms)
+Started GET "/" for 127.0.0.1 at 2016-10-20 19:43:29 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 2026ms (Views: 2025.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2566ms (Views: 2543.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-10-20 19:43:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (26.1ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.0ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.2ms)
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 19:43:35 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 19:43:38 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (4.6ms)
+  Rendered okrs/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 59ms (Views: 54.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 19:43:46 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gHqCAG57pslUIzoy3qFtLKc2VIQsR9Rd5cwB27u8sdmxoyMDTYZDH+i1+ttlrbxH3RSbp5o/jrGG3jBuVC0ebg==", "okr"=>{"title"=>"12 in 12 ", "description"=>"Testando"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "12 in 12 "], ["description", "Testando"], ["created_at", 2016-10-20 22:43:46 UTC], ["updated_at", 2016-10-20 22:43:46 UTC]]
+  [1m[35m (88.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/1
+Completed 302 Found in 97ms (ActiveRecord: 90.9ms)
+
+
+Started GET "/okrs/1" for 127.0.0.1 at 2016-10-20 19:43:46 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  Rendered okrs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 103ms (Views: 84.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/1/edit" for 127.0.0.1 at 2016-10-20 19:43:52 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.0ms)
+  Rendered okrs/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateKrs (20161020224530)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "krs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "okr_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_krs_on_okr_id" ON "krs" ("okr_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161020224530"]]
+  [1m[35m (132.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_krs_on_okr_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_krs_on_okr_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:03:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (7.7ms)
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:03:04 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 618ms (Views: 616.9ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 839ms (Views: 795.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/1" for 127.0.0.1 at 2016-10-20 20:03:08 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (0.6ms)
+  Rendered okrs/show.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/arthur/Área de Trabalho/InkFlow/app/views/krs/_form.html.erb:4: syntax error, unexpected keyword_end
+'.freeze;@output_buffer.append=( end );@output_buffer.to_s
+                                    ^
+/home/arthur/Área de Trabalho/InkFlow/app/views/krs/_form.html.erb:5: syntax error, unexpected keyword_ensure, expecting ')'
+/home/arthur/Área de Trabalho/InkFlow/app/views/krs/_form.html.erb:7: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/krs/_form.html.erb:4: syntax error, unexpected keyword_end
+app/views/krs/_form.html.erb:5: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/krs/_form.html.erb:7: syntax error, unexpected keyword_end, expecting ')'
+app/views/okrs/show.html.erb:16:in `_app_views_okrs_show_html_erb__3704328777900782175_61978640'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.2ms)
+Started GET "/okrs/1" for 127.0.0.1 at 2016-10-20 20:06:01 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (50.8ms)
+  Rendered okrs/show.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 152ms (Views: 149.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/1/edit" for 127.0.0.1 at 2016-10-20 20:06:37 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (5.3ms)
+  Rendered okrs/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/okrs/1" for 127.0.0.1 at 2016-10-20 20:06:39 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yem1507Tb3Dy9tAHkDsvY3wpQAWRXdIAsntmchh79B0MD5tJXpkq+oUOrtBXBEFpX8CiLFYmja+0Xq1teg0hLQ==", "okr"=>{"title"=>"12 in 12 ", "description"=>"Testando"}, "commit"=>"Update Okr", "id"=>"1"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/1
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs/1" for 127.0.0.1 at 2016-10-20 20:06:39 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.4ms)
+  Rendered okrs/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 102ms (Views: 96.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/1" for 127.0.0.1 at 2016-10-20 20:08:27 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.4ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.5ms)
+  Rendered okrs/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 123ms (Views: 119.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:08:35 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.7ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/okrs/1" for 127.0.0.1 at 2016-10-20 20:08:58 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.3ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.5ms)
+  Rendered okrs/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:09:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (7.4ms)
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:09:15 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 359ms (Views: 356.8ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 503ms (Views: 491.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/okrs/1" for 127.0.0.1 at 2016-10-20 20:09:18 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TuMlIOYhFh6jQ35mpg2ULLXEh1O9inVGygYcQnNt/EiJa1uSSey9l4BB0vi/A/aSv5eIKGtm1DoLVr9sYjqgxg==", "id"=>"1"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 1]]
+  [1m[35m (98.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 109ms (ActiveRecord: 98.8ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:09:19 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:09:20 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (27.2ms)
+  Rendered okrs/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:09:29 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y600IADCk/fC/1iA6cfZiqzrDmh71OWGtRl8N8/KHVZSdJUjIz92IX5pmGlSywjh1snBS82sv2rWC02CIFuy4Q==", "okr"=>{"title"=>"OBJ 1", "description"=>"Todaloo"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "OBJ 1"], ["description", "Todaloo"], ["created_at", 2016-10-20 23:09:29 UTC], ["updated_at", 2016-10-20 23:09:29 UTC]]
+  [1m[35m (224.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/2
+Completed 302 Found in 232ms (ActiveRecord: 226.7ms)
+
+
+Started GET "/okrs/2" for 127.0.0.1 at 2016-10-20 20:09:29 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (16.1ms)
+  Rendered okrs/show.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/okrs/2/edit" for 127.0.0.1 at 2016-10-20 20:09:37 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.4ms)
+  Rendered okrs/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/okrs/2" for 127.0.0.1 at 2016-10-20 20:09:40 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3vlHEMdMEN6MiuQ3MCizRQbdbvz+C1YPuU0JKWnRyyHh3nOe4/nnDuR39/Td/haLzaVM8cQZb7i38e/BVu327g==", "okr"=>{"title"=>"OBJ 1", "description"=>"Todaloo"}, "commit"=>"Update Okr", "id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/2
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/2" for 127.0.0.1 at 2016-10-20 20:09:40 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.3ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.2ms)
+  Rendered okrs/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 82ms (Views: 79.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:09:48 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/2/edit" for 127.0.0.1 at 2016-10-20 20:09:49 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.3ms)
+  Rendered okrs/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/okrs/2" for 127.0.0.1 at 2016-10-20 20:10:02 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m1h2Abid48Qq9DMS4usW6hmJ7RGc+eSTnkmadxyuAq+kf0KPnCgUFEIJINEPPbMk0vHPHKbr3SSQ9XyfI5I/YA==", "okr"=>{"title"=>"Todalooo", "description"=>"MOtherfucker"}, "commit"=>"Update Okr", "id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "okrs" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "okrs"."id" = ?[0m  [["title", "Todalooo"], ["description", "MOtherfucker"], ["updated_at", 2016-10-20 23:10:02 UTC], ["id", 2]]
+  [1m[35m (223.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/2
+Completed 302 Found in 230ms (ActiveRecord: 224.7ms)
+
+
+Started GET "/okrs/2" for 127.0.0.1 at 2016-10-20 20:10:02 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/2/edit" for 127.0.0.1 at 2016-10-20 20:10:08 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.5ms)
+  Rendered okrs/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:10:10 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/2" for 127.0.0.1 at 2016-10-20 20:10:12 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.3ms)
+  Rendered okrs/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:10:15 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/2" for 127.0.0.1 at 2016-10-20 20:10:18 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:13:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:13:49 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/okrs/2" for 127.0.0.1 at 2016-10-20 20:13:52 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (10.3ms)
+  Rendered okrs/show.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:14:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 349ms (Views: 336.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okr" for 127.0.0.1 at 2016-10-20 20:14:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/okr"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (11.7ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.3ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.7ms)
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:14:19 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 107ms (Views: 99.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/okrs/2" for 127.0.0.1 at 2016-10-20 20:14:24 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q2Qck07JA0kKu8Nh2XP3K3/4IT8G9m7Cyi4e9mBSLzRs7GIh4QSowCm5b//AfZWVdasuRNAaz74Lfr3YcQVzug==", "id"=>"2"}
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 2]]
+  [1m[35m (84.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 99ms (ActiveRecord: 86.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:14:24 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 123ms (Views: 118.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:14:27 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (5.6ms)
+  Rendered okrs/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:14:35 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"um+vXMEF6vjj16gxvBoECtIBJTEkVmEZOmfyDy/jVLaLtg5f4vgPLl9BaNgHFtVhqCPqEpIuO/VZdcO6wHL7AQ==", "okr"=>{"title"=>"Todalooo", "description"=>"MOtherfucker"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Todalooo"], ["description", "MOtherfucker"], ["created_at", 2016-10-20 23:14:35 UTC], ["updated_at", 2016-10-20 23:14:35 UTC]]
+  [1m[35m (283.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/3
+Completed 302 Found in 288ms (ActiveRecord: 284.0ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:14:35 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (7.8ms)
+  Rendered okrs/show.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 97ms (Views: 95.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:15:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (36.3ms)
+  Rendered okrs/show.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 422ms (Views: 401.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:16:04 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:16:08 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs/3/edit" for 127.0.0.1 at 2016-10-20 20:16:10 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (4.3ms)
+  Rendered okrs/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 68ms (Views: 65.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/okrs/3" for 127.0.0.1 at 2016-10-20 20:16:12 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YV/f8SbEFlsTlfB9SG242pgsXm49zFfyaTkyBQAHzhuy0AQVWoA8gHHRVZVmDnQJSxFG2z7cnD2UlTTAGVF56g==", "okr"=>{"title"=>"Todalooo", "description"=>"MOtherfucker"}, "commit"=>"Update Okr", "id"=>"3"}
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/3
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:16:12 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.9ms)
+  Rendered okrs/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:19:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (5.6ms)
+  Rendered okrs/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 78ms (Views: 70.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:19:22 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:20:57 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:20:58 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:21:02 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-20 20:21:02 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:21:03 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:21:14 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:21:17 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:25:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 343ms (Views: 327.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:25:47 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:25:49 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:25:50 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:25:53 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.6ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (33.0ms)
+  Rendered okrs/show.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 122ms (Views: 113.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:26:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (3.0ms)
+  Rendered okrs/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:26:37 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:26:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:26:39 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:26:40 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-20 20:26:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 118ms (Views: 104.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-10-20 20:26:45 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/XLOIogoEP0FVia3KX/wbaT3aYcSmaAKYG7L2NUR7J86+rCQJ+W7dCZUiikwcZLTrqRm/MR1AXahPmj2xEawEQ==", "user"=>{"email"=>"anf2@cin.ufpe.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "anf2@cin.ufpe.br"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/XLOIogoEP0FVia3KX/wbaT3aYcSmaAKYG7L2NUR7J86+rCQJ+W7dCZUiikwcZLTrqRm/MR1AXahPmj2xEawEQ==", "user"=>{"email"=>"anf2@cin.ufpe.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 495ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-10-20 20:26:47 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 109ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-20 20:26:52 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yC9boSlzoBdieGuZr5plDRd5PgL16CgYO5qS8RaYjy60aLasi3olCz70rqO3kAyHv7DiODrqwAWoheYYEWmEWQ==", "user"=>{"email"=>"anf2@cin.ufpe.br", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anf2@cin.ufpe.br"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "anf2@cin.ufpe.br"], ["encrypted_password", "$2a$11$iOV7StOYEevXnlcP.ANnsuLSMEbsK2dptsF064fPe44AySBWiUBYO"], ["created_at", 2016-10-20 23:26:52 UTC], ["updated_at", 2016-10-20 23:26:52 UTC]]
+  [1m[35m (74.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-20 23:26:53 UTC], ["last_sign_in_at", 2016-10-20 23:26:53 UTC], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", 2016-10-20 23:26:53 UTC], ["id", 5]]
+  [1m[35m (181.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 490ms (ActiveRecord: 257.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:26:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-20 20:26:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:26:56 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:26:58 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:27:00 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:27:01 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:27:02 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:27:03 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (3.1ms)
+  Rendered okrs/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 78ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/3/edit" for 127.0.0.1 at 2016-10-20 20:27:09 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.4ms)
+  Rendered okrs/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/okrs/3" for 127.0.0.1 at 2016-10-20 20:27:16 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cOMGikFxcUnWk/fUMJ88RLv7h418XqTf6Ptz/d34qr+jbN1uPTVbkrTXUjwe/PCXaMafOH9ObxAVV3U4xK4dTg==", "okr"=>{"title"=>"Todalooo", "description"=>"MOtherfuckersd/klgnhklnfsklhskhjsklhdfjhk;lghdfh"}, "commit"=>"Update Okr", "id"=>"3"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "okrs" SET "description" = ?, "updated_at" = ? WHERE "okrs"."id" = ?[0m  [["description", "MOtherfuckersd/klgnhklnfsklhskhjsklhdfjhk;lghdfh"], ["updated_at", 2016-10-20 23:27:16 UTC], ["id", 3]]
+  [1m[35m (225.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/3
+Completed 302 Found in 232ms (ActiveRecord: 226.8ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:27:16 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.9ms)
+  Rendered okrs/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:28:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.3ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (6.5ms)
+  Rendered okrs/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 85ms (Views: 76.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/okrs/3" for 127.0.0.1 at 2016-10-20 20:30:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 3]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (7.4ms)
+  Rendered okrs/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 120ms (Views: 96.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:30:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 316ms (Views: 305.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:30:37 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 139ms (Views: 129.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/okrs/3" for 127.0.0.1 at 2016-10-20 20:30:40 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2bkrG3ssLRd+f0/eeFjIP5eX4N33Nnj7SPs8ObKIdFkeMVWp1OGGnl1940BhVqqBncTvpiHa2YeJq58Xo98o1w==", "id"=>"3"}
+  [1m[36mOkr Load (1.0ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 3]]
+  [1m[35m (154.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 175ms (ActiveRecord: 157.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:30:40 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 109ms (Views: 107.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:30:42 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (31.4ms)
+  Rendered okrs/new.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:30:45 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UiUpWvqy+7OIq5UC7VRc4LKGjDRkMucb/+hauhx7amFj/IhZ2U8eZTQ9VetWWI2LyKRDF9JKvfec+msP8+rF1g==", "okr"=>{"title"=>"asdf", "description"=>"asfgg"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf"], ["description", "asfgg"], ["created_at", 2016-10-20 23:30:45 UTC], ["updated_at", 2016-10-20 23:30:45 UTC]]
+  [1m[35m (361.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/4
+Completed 302 Found in 367ms (ActiveRecord: 362.6ms)
+
+
+Started GET "/okrs/4" for 127.0.0.1 at 2016-10-20 20:30:45 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mOkr Load (8.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 4]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (11.6ms)
+  Rendered okrs/show.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 109ms (Views: 98.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:32:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 293ms (Views: 286.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:32:42 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:32:44 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 94ms (Views: 86.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/okrs/4" for 127.0.0.1 at 2016-10-20 20:32:45 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 4]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (32.0ms)
+  Rendered okrs/show.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 106ms (Views: 98.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/okrs/4/krs" for 127.0.0.1 at 2016-10-20 20:32:47 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vme1z6nWaoSmDIbzcDK7AspiiPHXHaz68GPkfr6t7ua9aiHi/ihP5d20sv0+Am1smOvF2R6RlTAOGQgS361n6A==", "kr"=>{"content"=>"asfgg"}, "commit"=>"Create Kr", "okr_id"=>"4"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asfgg"], ["okr_id", 4], ["created_at", 2016-10-20 23:32:47 UTC], ["updated_at", 2016-10-20 23:32:47 UTC]]
+  [1m[35m (257.5ms)[0m  [1m[36mcommit transaction[0m
+No template found for KrsController#create, rendering head :no_content
+Completed 204 No Content in 300ms (ActiveRecord: 258.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:33:19 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.6ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/4" for 127.0.0.1 at 2016-10-20 20:33:21 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 4]]
+  Rendered okrs/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Missing partial krs/_kr with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/arthur/Área de Trabalho/InkFlow/app/views"
+  * "/home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views"
+  * "/home/arthur/.rvm/gems/ruby-2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+  * "/home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-4.2.0/app/views"
+):
+    11: </p>
+    12: 
+    13: <div id="id_wrapper">
+    14: <%= render  @okr.krs %>
+    15: 	<div id="form">
+    16: 		<%= render "krs/form" %>
+    17: 	</div>
+  
+app/views/okrs/show.html.erb:14:in `_app_views_okrs_show_html_erb___1835832743976565002_69967131324520'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:33:34 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-20 20:33:39 -0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:33:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:33:43 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:33:45 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/4" for 127.0.0.1 at 2016-10-20 20:33:47 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"93sP/we6DmzMRhplPvb+2LhwffbvKda8rhVchPi+T5sw83FNqHel5e9Etvsn+JxmsiNyjTnFd8BvRf+q6ekTFQ==", "id"=>"4"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 4]]
+  [1m[35m (68.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 74ms (ActiveRecord: 68.8ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:33:47 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 103ms (Views: 101.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:33:49 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (4.1ms)
+  Rendered okrs/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:33:58 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eIOUzPKCNjcVDTqo4R5oPwPq/uIV2R+IMtobderk1nxJWjXP0X/T4amb+kFaErlUecgxwaOhRWRRyCrABXV5yw==", "okr"=>{"title"=>"Todalooo", "description"=>"MOtherfucker"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Todalooo"], ["description", "MOtherfucker"], ["created_at", 2016-10-20 23:33:58 UTC], ["updated_at", 2016-10-20 23:33:58 UTC]]
+  [1m[35m (214.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/5
+Completed 302 Found in 222ms (ActiveRecord: 216.2ms)
+
+
+Started GET "/okrs/5" for 127.0.0.1 at 2016-10-20 20:33:58 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 5]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.3ms)
+  Rendered okrs/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/okrs/5/krs" for 127.0.0.1 at 2016-10-20 20:34:04 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wr5TQP9HAdGgt8cMCpm2uuGlM0nap2JKMIdy0CXt+wYFNi3yUIqqWIO1a5ITl9QE6/Y8MgxLwzbx19H+NLqniA==", "kr"=>{"content"=>"Arthur"}, "commit"=>"Create Kr", "okr_id"=>"5"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Arthur"], ["okr_id", 5], ["created_at", 2016-10-20 23:34:04 UTC], ["updated_at", 2016-10-20 23:34:04 UTC]]
+  [1m[35m (222.0ms)[0m  [1m[36mcommit transaction[0m
+No template found for KrsController#create, rendering head :no_content
+Completed 204 No Content in 265ms (ActiveRecord: 223.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:34:23 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:34:26 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (7.2ms)
+  Rendered okrs/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 104ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:34:29 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VIkT8nzkxOClvgvwLTtYctcqERy46amyJSrHi7CqC+9lULLxXxkhNhkoyxmWN4kZrQjePw6R815GOPY+XzukWA==", "okr"=>{"title"=>"dfhj", "description"=>"jhghjghjg"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "dfhj"], ["description", "jhghjghjg"], ["created_at", 2016-10-20 23:34:29 UTC], ["updated_at", 2016-10-20 23:34:29 UTC]]
+  [1m[35m (228.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/6
+Completed 302 Found in 232ms (ActiveRecord: 228.6ms)
+
+
+Started GET "/okrs/6" for 127.0.0.1 at 2016-10-20 20:34:29 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 6]]
+  Rendered collection of templates [0 times] (0.1ms)
+  Rendered krs/_form.html.erb (3.5ms)
+  Rendered okrs/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:34:32 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs/6" for 127.0.0.1 at 2016-10-20 20:34:35 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.4ms)
+  Rendered okrs/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/okrs/6/krs" for 127.0.0.1 at 2016-10-20 20:34:38 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AqHsj1M8qFUWK57pjAYZvq2hwji3r1T8/k8QoEBsuPJiBVTaofWI4w2hvrGaZM82OzVbVIBF7WEh8TCCIIHcYA==", "kr"=>{"content"=>"cggj,,"}, "commit"=>"Create Kr", "okr_id"=>"6"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "cggj,,"], ["okr_id", 6], ["created_at", 2016-10-20 23:34:38 UTC], ["updated_at", 2016-10-20 23:34:38 UTC]]
+  [1m[35m (256.0ms)[0m  [1m[36mcommit transaction[0m
+No template found for KrsController#create, rendering head :no_content
+Completed 204 No Content in 296ms (ActiveRecord: 256.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:36:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 289ms (Views: 280.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:36:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 168ms (Views: 166.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:36:28 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:36:31 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 86ms (Views: 79.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/okrs/5" for 127.0.0.1 at 2016-10-20 20:36:34 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mMNgGTPlVcUEazFl7aL+sCw9dNGusmM/AyEmi2KvGytfSx6rnCj+TCdpnfv0rJwOJm57qnhewkPCcYWlc/hHpQ==", "id"=>"5"}
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 5]]
+  [1m[35m (85.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 98ms (ActiveRecord: 86.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:36:34 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 94ms (Views: 91.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/okrs/6" for 127.0.0.1 at 2016-10-20 20:36:40 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ngJfk/EnWbUjIpMg0Wx831y9/2jPcVG4Y7CNKZfdy95ZiiEhXuryPAAgP77IYh5hVu7wExmd8MSi4C4HhoqXUA==", "id"=>"6"}
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 6]]
+  [1m[35m (71.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 75ms (ActiveRecord: 71.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:36:40 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:36:42 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (28.7ms)
+  Rendered okrs/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:36:47 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6JhTLE9RgeHdoq7HnPaxobrxLiSARuTINNnRYmQGdOvZQfIvbKxkN2E0bi4n+mDKwNPhBzY+viRXy+DXi5fbXA==", "okr"=>{"title"=>"Arthur", "description"=>"Farias"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arthur"], ["description", "Farias"], ["created_at", 2016-10-20 23:36:47 UTC], ["updated_at", 2016-10-20 23:36:47 UTC]]
+  [1m[35m (226.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/7
+Completed 302 Found in 231ms (ActiveRecord: 226.7ms)
+
+
+Started GET "/okrs/7" for 127.0.0.1 at 2016-10-20 20:36:48 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.3ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 7]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (17.5ms)
+  Rendered okrs/show.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 125ms (Views: 121.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/okrs/7/krs" for 127.0.0.1 at 2016-10-20 20:36:51 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/0U+8YqcMQCL6WKDycfnvnq9uUe1EG7zNVdBOgCNrlY4zUBDJVGaiajrzh3QyYUAcO62PGP8z4/0B+IUEdry2A==", "kr"=>{"content"=>"asdf"}, "commit"=>"Create Kr", "okr_id"=>"7"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asdf"], ["okr_id", 7], ["created_at", 2016-10-20 23:36:51 UTC], ["updated_at", 2016-10-20 23:36:51 UTC]]
+  [1m[35m (254.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/7
+Completed 302 Found in 260ms (ActiveRecord: 255.6ms)
+
+
+Started GET "/okrs/7" for 127.0.0.1 at 2016-10-20 20:36:52 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 7]]
+  Rendered okrs/show.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial krs/_kr with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/arthur/Área de Trabalho/InkFlow/app/views"
+  * "/home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views"
+  * "/home/arthur/.rvm/gems/ruby-2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+  * "/home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-4.2.0/app/views"
+):
+    11: </p>
+    12: 
+    13: <div id="id_wrapper">
+    14: <%= render  @okr.krs %>
+    15: 	<div id="form">
+    16: 		<%= render "krs/form" %>
+    17: 	</div>
+  
+app/views/okrs/show.html.erb:14:in `_app_views_okrs_show_html_erb__2068457708480936180_69909536224260'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.3ms)
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:41:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:42:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 378ms (Views: 367.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:42:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:42:08 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:42:09 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 70ms (Views: 63.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/7" for 127.0.0.1 at 2016-10-20 20:42:12 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 7]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.9ms)
+  Rendered krs/_form.html.erb (32.7ms)
+  Rendered okrs/show.html.erb within layouts/application (61.1ms)
+Completed 200 OK in 131ms (Views: 123.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/okrs/7/krs" for 127.0.0.1 at 2016-10-20 20:42:16 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/p0+nspHSNQwfr9JSYckwAQ7i6RiZoE3hi5NwVv45nsM/hYtvep/BQ99SDIvQq18JMbV0baeeuqkkTfvND3Qmg==", "kr"=>{"content"=>"cvbvcbcvb"}, "commit"=>"Create Kr", "okr_id"=>"7"}
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "cvbvcbcvb"], ["okr_id", 7], ["created_at", 2016-10-20 23:42:16 UTC], ["updated_at", 2016-10-20 23:42:16 UTC]]
+  [1m[35m (238.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/7
+Completed 302 Found in 246ms (ActiveRecord: 238.7ms)
+
+
+Started GET "/okrs/7" for 127.0.0.1 at 2016-10-20 20:42:16 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 7]]
+  Rendered collection of krs/_kr.html.erb [2 times] (0.3ms)
+  Rendered krs/_form.html.erb (2.4ms)
+  Rendered okrs/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:42:34 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/okrs/7" for 127.0.0.1 at 2016-10-20 20:42:37 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q+PcpIFzDda4CrangQYyeSQJfRO7x7OG53IlOrQ0kblsa6IWLr6mX5sIGjmYCFDHLlpyaG0rEvomIoYUpWPNNw==", "id"=>"7"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 7]]
+  [1m[35m (649.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 653ms (ActiveRecord: 649.5ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:42:38 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:43:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 348ms (Views: 335.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:44:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 133ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:44:09 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:44:58 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:45:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 363ms (Views: 354.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:45:18 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:45:19 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 73ms (Views: 67.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:47:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 334ms (Views: 321.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:47:54 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.6ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:48:11 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.7ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:48:45 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:48:55 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:48:58 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:49:33 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:49:35 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:49:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:49:38 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:49:47 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:50:06 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:50:27 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:50:30 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:50:31 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:50:32 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:52:28 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 76ms (Views: 73.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:52:31 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:52:32 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:52:34 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-20 20:52:34 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:52:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:52:37 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:52:50 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 20:52:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:52:54 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:54:19 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-20 20:54:40 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:54:47 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 20:55:00 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 114ms (Views: 110.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 20:55:02 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (29.6ms)
+  Rendered okrs/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 103ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 20:55:06 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RylJRuvNfaSHbVMitIyYCOXOv7QD+iJQvSf8uG8gF2V28OhFyDCYcjv7k8sPgEljn+xwl7WCeLzeNc0NgLG40g==", "okr"=>{"title"=>"Todalooo", "description"=>""}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Todalooo"], ["description", ""], ["created_at", 2016-10-20 23:55:06 UTC], ["updated_at", 2016-10-20 23:55:06 UTC]]
+  [1m[35m (221.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/8
+Completed 302 Found in 230ms (ActiveRecord: 222.1ms)
+
+
+Started GET "/okrs/8" for 127.0.0.1 at 2016-10-20 20:55:07 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 8]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (8.5ms)
+  Rendered okrs/show.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 101ms (Views: 96.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/okrs/8/edit" for 127.0.0.1 at 2016-10-20 20:55:09 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.0ms)
+  Rendered okrs/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/okrs/8" for 127.0.0.1 at 2016-10-20 20:55:15 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ytg/P63FPr66SAIMBfCy59aREzCWaxR+Xlu8l57DY9A0e55IL7dwyN6MsXWQ8xbe+/bu3F9/u/1Cci6WIUSBow==", "okr"=>{"title"=>"Todalooo", "description"=>"MOtherfucker"}, "commit"=>"Update Okr", "id"=>"8"}
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "okrs" SET "description" = ?, "updated_at" = ? WHERE "okrs"."id" = ?[0m  [["description", "MOtherfucker"], ["updated_at", 2016-10-20 23:55:15 UTC], ["id", 8]]
+  [1m[35m (508.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/8
+Completed 302 Found in 517ms (ActiveRecord: 509.4ms)
+
+
+Started GET "/okrs/8" for 127.0.0.1 at 2016-10-20 20:55:15 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 8]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/okrs/8/krs" for 127.0.0.1 at 2016-10-20 20:55:24 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iM1LyfKaELA+mVOpVBlNZmvsYEyKfZEG368GNfROPFdPRTV7XVe7OR2b/zdNFy/YYb9vN1yRMHoe/6Ub5Rlg2Q==", "kr"=>{"content"=>"Japadocapeta"}, "commit"=>"Create Kr", "okr_id"=>"8"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Japadocapeta"], ["okr_id", 8], ["created_at", 2016-10-20 23:55:24 UTC], ["updated_at", 2016-10-20 23:55:24 UTC]]
+  [1m[35m (215.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/8
+Completed 302 Found in 221ms (ActiveRecord: 216.6ms)
+
+
+Started GET "/okrs/8" for 127.0.0.1 at 2016-10-20 20:55:24 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 8]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.3ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/okrs/8/krs" for 127.0.0.1 at 2016-10-20 20:55:32 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UPo0fkrkdEuo/BPjv0ebpGiqVE/V+I/uN/Mo64MtEOqXckrM5Snfwov+v32mSfkaYvlbNAMULpL2o4vFknpMZA==", "kr"=>{"content"=>"Joao misera"}, "commit"=>"Create Kr", "okr_id"=>"8"}
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Joao misera"], ["okr_id", 8], ["created_at", 2016-10-20 23:55:32 UTC], ["updated_at", 2016-10-20 23:55:32 UTC]]
+  [1m[35m (248.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/8
+Completed 302 Found in 256ms (ActiveRecord: 249.2ms)
+
+
+Started GET "/okrs/8" for 127.0.0.1 at 2016-10-20 20:55:32 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 8]]
+  Rendered collection of krs/_kr.html.erb [2 times] (0.5ms)
+  Rendered krs/_form.html.erb (2.8ms)
+  Rendered okrs/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/okrs/8/krs" for 127.0.0.1 at 2016-10-20 20:55:40 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H4S2PYvnXYx/s+pCZrNELgGxMPzlanlVHATCJuV+vYfYDMiPJCr2BVyxRtx/vSaQC+I/hzOG2CndVGEI9CnhCQ==", "kr"=>{"content"=>"Milone misera!"}, "commit"=>"Create Kr", "okr_id"=>"8"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Milone misera!"], ["okr_id", 8], ["created_at", 2016-10-20 23:55:40 UTC], ["updated_at", 2016-10-20 23:55:40 UTC]]
+  [1m[35m (223.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/8
+Completed 302 Found in 229ms (ActiveRecord: 224.1ms)
+
+
+Started GET "/okrs/8" for 127.0.0.1 at 2016-10-20 20:55:40 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 8]]
+  Rendered collection of krs/_kr.html.erb [3 times] (0.3ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 21:35:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 419ms (Views: 405.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-20 21:35:53 -0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 43ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 21:35:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 125ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-10-20 21:36:00 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Or7V+vCBMVI3PZa2q4LhNllGZURzLT1BwfPK3bcVuKz9NqtIX0ya2xQ/OiiyjIOIUxVqP6XBnD0Ao2nzpkLkIg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 21:36:00 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-20 21:36:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (3.6ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 97ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-10-20 21:36:06 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/registrations/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-10-20 21:36:19 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sYsgUea2/0afrSZWEYw25HhVa7kQSnJd002AmSw2tvOTf5tOZwAZnirBzJ6CdUYdBZk+tUgtYJOTiLTdzNppsQ==", "user"=>{"email"=>"bianca-farias@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bianca-farias@hotmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "bianca-farias@hotmail.com"], ["encrypted_password", "$2a$11$Ve0ASTgxnzoCOkgKD0FM/u9CNnNMDdYIkqCyvUZ6RxXTRpVOr/qhC"], ["created_at", 2016-10-21 00:36:19 UTC], ["updated_at", 2016-10-21 00:36:19 UTC]]
+  [1m[35m (84.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", 2016-10-21 00:36:19 UTC], ["last_sign_in_at", 2016-10-21 00:36:19 UTC], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", 2016-10-21 00:36:19 UTC], ["id", 6]]
+  [1m[35m (69.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 352ms (ActiveRecord: 155.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 21:36:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:36:23 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 69ms (Views: 62.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/okrs/8" for 127.0.0.1 at 2016-10-20 21:36:26 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qcdEVX55jDa3VCTVEY8YuxQ2hM+EcnwzEEUIpAkpL+8soP5JFfMV2xRG+6rKlI65lm9b8mfET5nE/KrEOwN54w==", "id"=>"8"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 8]]
+  [1m[35m (123.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 128ms (ActiveRecord: 124.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:36:26 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 21:36:28 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (6.6ms)
+  Rendered okrs/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 21:36:39 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyojWYEhrYb0/lkdmggrmWbm/fc44w7OKEOLr1YUbQbiDp+59KLz6Q1xuU17xdjHMRJeHCTOScD5NkE7u1D4iw==", "okr"=>{"title"=>"Bianca", "description"=>"Fazer tarefa de amanhã"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Bianca"], ["description", "Fazer tarefa de amanhã"], ["created_at", 2016-10-21 00:36:39 UTC], ["updated_at", 2016-10-21 00:36:39 UTC]]
+  [1m[35m (228.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/9
+Completed 302 Found in 232ms (ActiveRecord: 228.3ms)
+
+
+Started GET "/okrs/9" for 127.0.0.1 at 2016-10-20 21:36:39 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 9]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (15.1ms)
+  Rendered okrs/show.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 119ms (Views: 116.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/okrs/9/krs" for 127.0.0.1 at 2016-10-20 21:36:47 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j5u7iYgq0vPjan8H65RGd4Un+I0cMhHflp6R+FOiaa8K/AGV46BLHkB4oHgwj9B1B34nsP+EInVCJzOYYYg/ow==", "kr"=>{"content"=>"Matematica pagina 40"}, "commit"=>"Create Kr", "okr_id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Matematica pagina 40"], ["okr_id", 9], ["created_at", 2016-10-21 00:36:47 UTC], ["updated_at", 2016-10-21 00:36:47 UTC]]
+  [1m[35m (216.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/9
+Completed 302 Found in 224ms (ActiveRecord: 218.0ms)
+
+
+Started GET "/okrs/9" for 127.0.0.1 at 2016-10-20 21:36:48 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 9]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.4ms)
+  Rendered krs/_form.html.erb (2.6ms)
+  Rendered okrs/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/okrs/9/krs" for 127.0.0.1 at 2016-10-20 21:36:55 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cz9Yxrt5xqtMPPwrYwHyGopZeEtGfYxihIPhBrxj/Ij2WOLa0PNfRu8uI1S4GmQYCACndqXLv8hQOkNmjkmqhA==", "kr"=>{"content"=>"Geogradia página 434"}, "commit"=>"Create Kr", "okr_id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Geogradia página 434"], ["okr_id", 9], ["created_at", 2016-10-21 00:36:55 UTC], ["updated_at", 2016-10-21 00:36:55 UTC]]
+  [1m[35m (257.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/9
+Completed 302 Found in 267ms (ActiveRecord: 258.0ms)
+
+
+Started GET "/okrs/9" for 127.0.0.1 at 2016-10-20 21:36:55 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 9]]
+  Rendered collection of krs/_kr.html.erb [2 times] (0.5ms)
+  Rendered krs/_form.html.erb (2.0ms)
+  Rendered okrs/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/9/edit" for 127.0.0.1 at 2016-10-20 21:36:59 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.7ms)
+  Rendered okrs/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/9" for 127.0.0.1 at 2016-10-20 21:37:01 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 9]]
+  Rendered collection of krs/_kr.html.erb [2 times] (0.7ms)
+  Rendered krs/_form.html.erb (2.3ms)
+  Rendered okrs/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:37:04 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/9" for 127.0.0.1 at 2016-10-20 21:37:12 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4gvUtO9VBGjmMfVNyDtZvIJ21ib+ZqUFegxn1da3obJnbG6ohN+dhUUjKjITIM++AC8JGx3Qlq+utcW15J33vg==", "id"=>"9"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 9]]
+  [1m[35m (115.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 120ms (ActiveRecord: 115.8ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:37:12 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 106ms (Views: 103.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:42:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 344ms (Views: 329.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 21:44:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (29.3ms)
+  Rendered okrs/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 371ms (Views: 356.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:44:52 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-20 21:44:52 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:44:55 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-20 21:44:56 -0300
+Processing by OkrsController#new as HTML
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.4ms)
+  Rendered okrs/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 21:45:01 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NrYI2OQRBPPlsU77BIfSig1TEfp3LxHYg9qODM5N+rBDkrQ4kZJanBw+rqvlSiHUWqeyEWsCVtZSr0SYIwlvPQ==", "okr"=>{"title"=>"Aloha", "description"=>"Mahalo"}, "commit"=>"Create Okr"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aloha"], ["description", "Mahalo"], ["created_at", 2016-10-21 00:45:01 UTC], ["updated_at", 2016-10-21 00:45:01 UTC]]
+  [1m[35m (223.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/10
+Completed 302 Found in 230ms (ActiveRecord: 223.6ms)
+
+
+Started GET "/okrs/10" for 127.0.0.1 at 2016-10-20 21:45:01 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 10]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (8.7ms)
+  Rendered okrs/show.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 83ms (Views: 79.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/okrs/10/krs" for 127.0.0.1 at 2016-10-20 21:45:09 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i5m3yjOeRJHFlS553PBoDYa5v5ls5+9vIVsG7h9v91cO/g3WWBTdfGaH8QYH6/4PBOBgpI9R3MX14qSOLUWhWw==", "kr"=>{"content"=>"blab"}, "commit"=>"Create Kr", "okr_id"=>"10"}
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "blab"], ["okr_id", 10], ["created_at", 2016-10-21 00:45:09 UTC], ["updated_at", 2016-10-21 00:45:09 UTC]]
+  [1m[35m (212.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/10
+Completed 302 Found in 218ms (ActiveRecord: 213.4ms)
+
+
+Started GET "/okrs/10" for 127.0.0.1 at 2016-10-20 21:45:09 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 10]]
+  Rendered collection of krs/_kr.html.erb [1 times] (3.2ms)
+  Rendered okrs/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"krs", :id=>"11", :okr_id=>nil} missing required keys: [:okr_id]):
+    1: <p> <%= kr.content %></p>
+    2: <%= link_to "Delete", okr_kr_path(@ork, kr.id), method: :delete, data: {confirm: "Are you sure?"}%>
+  
+app/views/krs/_kr.html.erb:2:in `_app_views_krs__kr_html_erb__4021515827404515586_70127055203000'
+app/views/okrs/show.html.erb:14:in `_app_views_okrs_show_html_erb__717854106786304636_37619660'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+Started POST "/okrs" for 127.0.0.1 at 2016-10-20 21:47:20 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8wK41sSDSNil0Fgf/+HiK2pXo8p6WskeJCp3LRi65rN2ZQLKrwnRNQbCh2Ak+nQp6A5895ns+rTwk9VNKpCwvw==", "okr"=>{"title"=>"Aloha", "description"=>"Mahalo"}, "commit"=>"Create Okr"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aloha"], ["description", "Mahalo"], ["created_at", 2016-10-21 00:47:20 UTC], ["updated_at", 2016-10-21 00:47:20 UTC]]
+  [1m[35m (219.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 224ms (ActiveRecord: 219.7ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:47:20 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/okrs/11/krs" for 127.0.0.1 at 2016-10-20 21:47:23 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HBYFs+xK7WpRwKgNZ6/+JNi8jZkng09MtoYRNc7XapaZcb+vh8B0h/LSd3K8tGgmWuVSpMQ1fOZiP7NV/P08mg==", "kr"=>{"content"=>"asdf"}, "commit"=>"Create Kr", "okr_id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asdf"], ["okr_id", 11], ["created_at", 2016-10-21 00:47:23 UTC], ["updated_at", 2016-10-21 00:47:23 UTC]]
+  [1m[35m (292.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 297ms (ActiveRecord: 292.5ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:47:24 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.7ms)
+  Rendered krs/_form.html.erb (1.5ms)
+  Rendered okrs/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/okrs/11/krs/12" for 127.0.0.1 at 2016-10-20 21:47:30 -0300
+Processing by KrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6ZHRMOCUEKkIaBsEsdXiKvudhiWwS9vQBHPDGuALxcts9mssix6JRKt6xHtqznQoecRZGFP96HrQymF60iGTxw==", "okr_id"=>"11", "id"=>"12"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT  "krs".* FROM "krs" WHERE "krs"."okr_id" = ? AND "krs"."id" = ? LIMIT ?[0m  [["okr_id", 11], ["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "krs" WHERE "krs"."id" = ?[0m  [["id", 12]]
+  [1m[35m (98.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 103ms (ActiveRecord: 98.5ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:47:30 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.5ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.9ms)
+  Rendered okrs/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 98ms (Views: 96.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/okrs/11/krs" for 127.0.0.1 at 2016-10-20 21:49:52 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oqbcyXOO7XtnveCAI4/jVYvvVoTyh5CY6Oab1qGuF9snwWbVGAR0lsSvP//4lHVXCbaJuRExozI8Xzm2k4RB1w==", "kr"=>{"content"=>"asdf"}, "commit"=>"Create Kr", "okr_id"=>"11"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asdf"], ["okr_id", 11], ["created_at", 2016-10-21 00:49:52 UTC], ["updated_at", 2016-10-21 00:49:52 UTC]]
+  [1m[35m (207.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 233ms (ActiveRecord: 210.1ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:49:52 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.7ms)
+  Rendered krs/_form.html.erb (1.8ms)
+  Rendered okrs/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/okrs/11/krs" for 127.0.0.1 at 2016-10-20 21:49:54 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OsnTmTXo/D40DxquKlCbTOMde7ssYTgtI/bvDAUbvE+/rmmFXmJl05cdxdHxSw1OYUSkhs/XC4f3T01sNzHqQw==", "kr"=>{"content"=>"asdff"}, "commit"=>"Create Kr", "okr_id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asdff"], ["okr_id", 11], ["created_at", 2016-10-21 00:49:54 UTC], ["updated_at", 2016-10-21 00:49:54 UTC]]
+  [1m[35m (225.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 231ms (ActiveRecord: 226.1ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:49:54 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [2 times] (0.9ms)
+  Rendered krs/_form.html.erb (2.1ms)
+  Rendered okrs/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/11/krs/13" for 127.0.0.1 at 2016-10-20 21:49:58 -0300
+Processing by KrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SerxOLBxF7RfZLw8SWwUfFjYk7BBQ/nVd9nO9hybUUHMjUsk2/uOWfx2Y0OSd4J+2oFMjaL1yn+jYGyWLrEHTQ==", "okr_id"=>"11", "id"=>"13"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT  "krs".* FROM "krs" WHERE "krs"."okr_id" = ? AND "krs"."id" = ? LIMIT ?[0m  [["okr_id", 11], ["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "krs" WHERE "krs"."id" = ?[0m  [["id", 13]]
+  [1m[35m (86.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 94ms (ActiveRecord: 87.5ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:49:59 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.6ms)
+  Rendered krs/_form.html.erb (1.2ms)
+  Rendered okrs/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/11/krs/14" for 127.0.0.1 at 2016-10-20 21:50:01 -0300
+Processing by KrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96YYy4ZhPa0/7U1hOFF3PFmebvZv/PvDDemzAl0obKpywaLX7eukQJz/kh7jSuE+28exy4xKyGnZUBFibwI6pg==", "okr_id"=>"11", "id"=>"14"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT  "krs".* FROM "krs" WHERE "krs"."okr_id" = ? AND "krs"."id" = ? LIMIT ?[0m  [["okr_id", 11], ["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "krs" WHERE "krs"."id" = ?[0m  [["id", 14]]
+  [1m[35m (80.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 86ms (ActiveRecord: 80.9ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:01 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.5ms)
+  Rendered okrs/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/okrs/11/krs" for 127.0.0.1 at 2016-10-20 21:50:04 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sdE13I0JBNQ9jVWTbh9Uuro9TtZEcSRq/+tN4E/GZb40to/A5oOdOZ6fiuy1BMK4OGSR66fHF8ArUu+Afewzsg==", "kr"=>{"content"=>"asd1"}, "commit"=>"Create Kr", "okr_id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "asd1"], ["okr_id", 11], ["created_at", 2016-10-21 00:50:04 UTC], ["updated_at", 2016-10-21 00:50:04 UTC]]
+  [1m[35m (244.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 251ms (ActiveRecord: 245.1ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:04 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.6ms)
+  Rendered krs/_form.html.erb (2.1ms)
+  Rendered okrs/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/okrs/11/krs" for 127.0.0.1 at 2016-10-20 21:50:07 -0300
+Processing by KrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/M4F6Byn+CPaa/8/IDxkqMzgMyAZYqpA49PeuwVpBHSlIILy/gGDSx7cIMnm2eQIWpf8WPTuQPXNu0a3j/yHQ==", "kr"=>{"content"=>"agg2"}, "commit"=>"Create Kr", "okr_id"=>"11"}
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "krs" ("content", "okr_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "agg2"], ["okr_id", 11], ["created_at", 2016-10-21 00:50:07 UTC], ["updated_at", 2016-10-21 00:50:07 UTC]]
+  [1m[35m (174.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 187ms (ActiveRecord: 175.3ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:08 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [2 times] (0.7ms)
+  Rendered krs/_form.html.erb (1.7ms)
+  Rendered okrs/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/11/krs/15" for 127.0.0.1 at 2016-10-20 21:50:09 -0300
+Processing by KrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C0fcit8B1/eGI/noHj8gqviv7QVZ54OR7h2suD4+iYOOIGaWtItOGiUxJpfFJLaoevYyOLpRsDs6pA7YDBTfjw==", "okr_id"=>"11", "id"=>"15"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT  "krs".* FROM "krs" WHERE "krs"."okr_id" = ? AND "krs"."id" = ? LIMIT ?[0m  [["okr_id", 11], ["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "krs" WHERE "krs"."id" = ?[0m  [["id", 15]]
+  [1m[35m (98.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 104ms (ActiveRecord: 99.2ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:10 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of krs/_kr.html.erb [1 times] (0.6ms)
+  Rendered krs/_form.html.erb (1.6ms)
+  Rendered okrs/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/11/krs/16" for 127.0.0.1 at 2016-10-20 21:50:12 -0300
+Processing by KrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CZeuCxpSMrXPhWXEO88FlhWad/7B1Zwfmumou0ZtNViM8BQXcdirWGyXurvg1JOUl8OowyJjr7VOUArbdEdjVA==", "okr_id"=>"11", "id"=>"16"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT  "krs".* FROM "krs" WHERE "krs"."okr_id" = ? AND "krs"."id" = ? LIMIT ?[0m  [["okr_id", 11], ["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "krs" WHERE "krs"."id" = ?[0m  [["id", 16]]
+  [1m[35m (88.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/11
+Completed 302 Found in 93ms (ActiveRecord: 88.6ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:13 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.4ms)
+  Rendered okrs/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs/11/edit" for 127.0.0.1 at 2016-10-20 21:50:15 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.8ms)
+  Rendered okrs/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:17 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 11]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (4.7ms)
+  Rendered okrs/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 77ms (Views: 74.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:50:19 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/10" for 127.0.0.1 at 2016-10-20 21:50:22 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aIVh5leZTZRTV5JRnftT0fZPCrNvlCbnqzDS34KXWjrt4tv6PBPUefBFTS5G4MXTdBbVjowiFU1/iXC/sL0MNg==", "id"=>"10"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 10]]
+  [1m[35m (95.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 98ms (ActiveRecord: 95.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:50:22 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/okrs/11" for 127.0.0.1 at 2016-10-20 21:50:25 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G1YlsjNLlYGll7ZXRxBXGV0RTXltO3K6tmhUNcaLjdWeMZ+uWMEMbAaFaSicC8Eb30iSRI6NQRBi0fZV9KHb2Q==", "id"=>"11"}
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 11]]
+  [1m[35m (75.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 81ms (ActiveRecord: 76.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-20 21:50:25 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 0.1ms)
+
+
