@@ -56,7 +56,7 @@ class OkrsController < ApplicationController
   def destroy
     @okr.destroy
     respond_to do |format|
-      format.html { redirect_to okrs_url, notice: 'Okr was successfully destroyed.' }
+      format.html { redirect_to okrs_url, notice: 'OKR was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

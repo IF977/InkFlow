@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Okrs</h1>
+<h1>OKR</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= okr.title %></td>
         <td><%= okr.description %></td>
-        <td><%= link_to 'Show', okr %></td>
-        <td><%= link_to 'Edit', edit_okr_path(okr) %></td>
-        <td><%= link_to 'Destroy', okr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show', okr, method: :get %></td>
+        <td><%= button_to 'Edit', edit_okr_path(okr), method: :get%></td>
+        <td><%= button_to 'Destroy', okr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Okr', new_okr_path %>
+<%= button_to 'New Okr', new_okr_path, method: :get%>

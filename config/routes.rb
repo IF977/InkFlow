@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
   resources :okrs do
-  	resources :krs
+  	resources :krs do
+  		member do
+  			patch :complete
+  		end
+
+  	end
+
   end
   
   get 'contact/us'
