@@ -1,24 +1,33 @@
 <div class="row clearfix">
 	<% if kr.completed? %>
-	<div class="complete">
-		<%= link_to "Mark as Complete", complete_okr_kr_path(@okr, kr.id), method: :patch %>	
-	</div>
+
+
+	
 	<div class="kr">
-		<p style="opacity: 0.4"><strike><%= kr.content %></strike></p>
+		<cite style="opacity: 0.4"><strike><%= kr.content %></strike></cite>
+	</div>
+	<div class="complete">
+		<%= button_to "Completed", complete_okr_kr_path(@okr, kr.id),disabled: true,  method: :patch %>	
 	</div>
 	<div class="trash">
 		<%= link_to "Delete", okr_kr_path(@okr, kr.id), method: :delete, data: {confirm: "Are you sure?"}%>
 	</div>
+	<br>
+
 	<%else%>
-	<div class="complete">
-		<%= link_to "Mark as Complete", complete_okr_kr_path(@okr, kr.id), method: :patch %>	
-	</div>
+
+
+	
 	<div class="kr">
-		<p><%= kr.content %></p>
+		<cite><%= kr.content %></cite>
+	</div>
+	<div class="complete">
+		<%= button_to "Mark as Complete", complete_okr_kr_path(@okr, kr.id), method: :patch %>	
 	</div>
 	<div class="trash">
 	<%= link_to "Delete", okr_kr_path(@okr, kr.id), method: :delete, data: {confirm: "Are you sure?"}%>
 	</div>
+	<br>
 	<%end%>
 	
 
