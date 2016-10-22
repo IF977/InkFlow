@@ -10888,3 +10888,186 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 127ms (Views: 125.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-10-22 16:54:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 805ms (Views: 794.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:54:49 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-22 16:54:51 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:54:57 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-22 16:54:58 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 102ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-22 16:56:03 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:56:05 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (110.0ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `equipes!' for #<#<Class:0x007f0d181773a8>:0x000000040edf18>):
+    1: <%= Aqui será feita a criação de equipes! %>
+  
+app/views/team/manage.html.erb:1:in `_app_views_team_manage_html_erb___2164207547466180823_34056180'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.2ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.6ms)
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:56:15 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:56:28 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:58:39 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-22 16:58:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-22 16:58:42 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-22 16:58:43 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.6ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 88ms (Views: 80.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:58:44 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-22 16:58:45 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:58:46 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:59:54 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-22 16:59:55 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 16:59:57 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-22 17:06:28 -0300
+Processing by TeamController#manage as HTML
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-22 17:06:33 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-22 17:06:44 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-22 17:06:55 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 140ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-22 17:12:59 -0300
+Processing by ContactController#us as HTML
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
