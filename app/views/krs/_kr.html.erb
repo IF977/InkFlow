@@ -2,7 +2,7 @@
 	<% if kr.completed? %>
 
 
-	
+	<hr>
 	<div class="kr">
 		<cite style="opacity: 0.4"><strike><%= kr.content %></strike></cite>
 	</div>
@@ -10,23 +10,25 @@
 		<%= button_to "Completed", complete_okr_kr_path(@okr, kr.id),disabled: true,  method: :patch %>	
 	</div>
 	<div class="trash">
-		<%= link_to "Delete", okr_kr_path(@okr, kr.id), method: :delete, data: {confirm: "Are you sure?"}%>
+		<%= button_to "Delete", okr_kr_path(@okr, kr.id), method: :delete, data: {confirm: "Delete KR?"}%>
 	</div>
+	
 	<br>
 
 	<%else%>
 
 
-	
+	<hr>
 	<div class="kr">
 		<cite><%= kr.content %></cite>
 	</div>
 	<div class="complete">
-		<%= button_to "Mark as Complete", complete_okr_kr_path(@okr, kr.id), method: :patch %>	
+		<%= button_to "Mark as Complete", complete_okr_kr_path(@okr, kr.id), method: :patch, data: {confirm: "Mark as complete?"} %>	
 	</div>
 	<div class="trash">
-	<%= link_to "Delete", okr_kr_path(@okr, kr.id), method: :delete, data: {confirm: "Are you sure?"}%>
+	<%= button_to "Delete", okr_kr_path(@okr, kr.id), method: :delete, data: {confirm: "Are you sure?"}%>
 	</div>
+
 	<br>
 	<%end%>
 	

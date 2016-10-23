@@ -34,7 +34,7 @@ class OkrsController < ApplicationController
         format.html { render :new }
         format.json { render json: @okr.errors, status: :unprocessable_entity }
       end
-    end
+    end    
   end
 
   # PATCH/PUT /okrs/1

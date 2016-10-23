@@ -1,12 +1,21 @@
-<p>
-  <strong>Title:</strong>
-  <%= @okr.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @okr.description.first(30) %>
-</p>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>
+				<strong><%= @okr.title %></strong>
+			</h2>
+			<p>
+				<%= @okr.description %>
+			</p>
+			
+		</div>
+	</div>
+</div>
+
+
 
 <div id="id_wrapper">
 <%= render  @okr.krs %>
