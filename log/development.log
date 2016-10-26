@@ -16443,3 +16443,1592 @@ Processing by TeamsController#index as HTML
 Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.5ms)
 
 
+Started DELETE "/teams/5" for 127.0.0.1 at 2016-10-26 00:07:49 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RNP5kQx/xbtoh4kLRvK/3GRp55Dm8/rDJAMXNZ40ZbetiBPq/LhVbVlluapbjabbU5TsbzOmchYl8o/BBYBXxg==", "id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 5]]
+  [1m[35m (65.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 73ms (ActiveRecord: 66.1ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:07:49 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/teams/6" for 127.0.0.1 at 2016-10-26 00:07:52 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3Wjf3YyNKuXmpfA/YNpTGLHzzP2ztJfHgcKvT+sthLc0MzWmfEq6M9dHwJ59pUofhg7HAmbhHxKAMze7cJm2xg==", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 6]]
+  [1m[35m (91.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 100ms (ActiveRecord: 92.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:07:52 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:10:47 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 91ms (Views: 86.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:11:11 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-26 00:15:21 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.5ms)
+  Rendered teams/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 81ms (Views: 76.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2016-10-26 00:15:37 -0300
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Z1wlHF7TWBoXM8XP9GOLrqWGseAOugWv+EeISwbbg8Qxprvgbzdtlm+/7YirpcpjWsROFVvYMO+EIbVt69cfg==", "team"=>{"title"=>"qq coisa", "description"=>"aksjldajsdlajlskdjasdjalsdjalksdjklasjdkajsdkjaskdljaksdjkasjdkalsjdklajsdklajsksdjgkdlfjvnklsdjahsdioasiduaiosudoaisudioausdoiausdiausdiausdoaiusiodausdoiausiodausidoausiduaisoduaisdua"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "qq coisa"], ["description", "aksjldajsdlajlskdjasdjalsdjalksdjklasjdkajsdkjaskdljaksdjkasjdkalsjdklajsdklajsksdjgkdlfjvnklsdjahsdioasiduaiosudoaisudioausdoiausdiausdiausdoaiusiodausdoiausiodausidoausiduaisoduaisdua"], ["created_at", 2016-10-26 03:15:37 UTC], ["updated_at", 2016-10-26 03:15:37 UTC]]
+  [1m[35m (171.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/7
+Completed 302 Found in 177ms (ActiveRecord: 172.2ms)
+
+
+Started GET "/teams/7" for 127.0.0.1 at 2016-10-26 00:15:37 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:15:40 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/teams/7" for 127.0.0.1 at 2016-10-26 00:17:08 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iUc8Er7x59yuOdkxot2onAgyrN/9G5ITTRVFVfLzIoFgHNZpTjZ3Cp/b6ZC/orGbP8+nIChOGsZM5N2haUcQ8A==", "id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 7]]
+  [1m[35m (54.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 62ms (ActiveRecord: 55.2ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:17:08 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-26 00:23:52 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (2.2ms)
+  Rendered teams/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 175ms (Views: 173.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2016-10-26 00:24:02 -0300
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/parD9+QwFEGaV/Nd083MQ3v7QlB7zUsjo72RJ+iQMkXzUF0L1dQhzeLb2xqMC42OhLm9pS6vfmPf26wBBZyuA==", "team"=>{"title"=>"caio", "description"=>"aksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklas"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "caio"], ["description", "aksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklas"], ["created_at", 2016-10-26 03:24:02 UTC], ["updated_at", 2016-10-26 03:24:02 UTC]]
+  [1m[35m (180.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 188ms (ActiveRecord: 180.7ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:24:03 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 116ms (Views: 110.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:25:41 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 77ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:25:48 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 78ms (Views: 74.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:26:47 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:26:55 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 116ms (Views: 111.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:30:05 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:30:18 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:30:25 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:31:00 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 78ms (Views: 74.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:37:31 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 149ms (Views: 146.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:37:35 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 78ms (Views: 72.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:39:12 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 80ms (Views: 75.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:39:45 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:39:48 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 72.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:40:35 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:40:54 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...space: nowrap;}": expected selector or at-rule, was "}"):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Ink" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/stylesheets/teams.scss:9
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1839573251908672526_70106429535220'
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.8ms)
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:41:05 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 116ms (Views: 112.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:41:41 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 122ms (Views: 117.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:43:13 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 125ms (Views: 122.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:43:15 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:47:25 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 131ms (Views: 124.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:50:18 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 83.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:50:38 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 76ms (Views: 71.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:50:58 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 78ms (Views: 73.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:52:04 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 88.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:53:11 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:54:04 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 81ms (Views: 75.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:54:16 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 83ms (Views: 77.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 00:58:01 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 74ms (Views: 72.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:58:05 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 113ms (Views: 106.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:58:30 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:58:33 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 84ms (Views: 78.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 00:58:51 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.3ms)
+  Rendered teams/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 88ms (Views: 83.4ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 00:58:56 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6laFUQDTmrGNJG/duc0Sj15BByL4bXINuk2f4QmTf6H8Pb9O7UvUcLrsLvBlGMOuHRlVni5X4A5oZJn71TafOQ==", "team"=>{"title"=>"caio", "description"=>"aksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklasaksjdlasjdasjdklas"}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:58:56 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 77ms (Views: 71.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 00:59:04 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (4.4ms)
+  Rendered teams/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 88ms (Views: 84.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 00:59:40 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uv7BJlJ2evUjzDq0EfTexT4Wd0z4OJziVquaaXweML6slfs5v+40NBQEe5nNIQ/kfU4l8C4CDuGEgpxzoLvQJg==", "team"=>{"title"=>"caio", "description"=>"Alguma coisa acontece no meu coração, toda vez que cruzo a avenida são joão, é que quando cheguei por aqui eu nada entendi, é que lalalalalalaalalalalalala lalalalalalalalalalala"}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "Alguma coisa acontece no meu coração, toda vez que cruzo a avenida são joão, é que quando cheguei por aqui eu nada entendi, é que lalalalalalaalalalalalala lalalalalalalalalalala"], ["updated_at", 2016-10-26 03:59:40 UTC], ["id", 8]]
+  [1m[35m (88.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 96ms (ActiveRecord: 89.9ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:59:40 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 00:59:54 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (4.0ms)
+  Rendered teams/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 00:59:59 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQ5T05akcR7hWZNoJVwXcnGl9jURiEf32Y40slr227EXZWnMezw/39aR0kX5icZTMv2kicey1fQLpzKohlM7KQ==", "team"=>{"title"=>"caio", "description"=>"Alguma coisa acontece no meu coração, toda vez que cruzo a avenida são joão, é que quando cheguei por aqui eu nada entendi, é que lalalalalalaalalalalalala lalalalalalalalalalala"}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 00:59:59 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:00:17 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 122ms (Views: 116.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:01:38 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 98ms (Views: 94.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:02:24 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 104ms (Views: 98.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:02:26 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 78ms (Views: 74.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:02:48 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 112ms (Views: 107.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:03:03 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 134ms (Views: 128.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:03:06 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 77ms (Views: 71.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 01:03:13 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.7ms)
+  Rendered teams/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 99ms (Views: 92.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 01:03:29 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uWK+/I5Bt4ujqYoebedy8updn5/0WiEqVffNGWKFdmGvCYTjY9n5SpRhyzOxMqPTqQXNIyJgsymH3ssDviCW+Q==", "team"=>{"title"=>"caio", "description"=>"kkkkkkkkkkkkkkkkkkkkkkçasdlkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkaçsldkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "kkkkkkkkkkkkkkkkkkkkkkçasdlkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkaçsldkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"], ["updated_at", 2016-10-26 04:03:29 UTC], ["id", 8]]
+  [1m[35m (59.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 66ms (ActiveRecord: 60.0ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:03:29 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 78ms (Views: 75.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:04:04 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:04:31 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 127ms (Views: 121.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:07:16 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 136ms (Views: 130.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:07:18 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 75ms (Views: 70.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:07:31 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 102ms (Views: 98.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:09:05 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 98ms (Views: 94.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 01:09:12 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.4ms)
+  Rendered teams/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 89ms (Views: 86.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 01:09:23 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xUs5CIyRNXbayQ1MEGaO8Bhuky6BLEpx0UKUoE/fIufTIAMXYQl7t+0BTGHMs1/RWzbBklcW2HIDa5K6k3rCfw==", "team"=>{"title"=>"caio", "description"=>"kkkkkkkkkkkkkkkkkkkkkkçasdlkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkaçsldkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "kkkkkkkkkkkkkkkkkkkkkkçasdlkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkaçsldkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"], ["updated_at", 2016-10-26 04:09:23 UTC], ["id", 8]]
+  [1m[35m (75.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 84ms (ActiveRecord: 76.5ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:09:23 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 78ms (Views: 73.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 01:09:44 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.9ms)
+  Rendered teams/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 99ms (Views: 94.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 01:11:16 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JnbMYPi0VuFzfHFuQpW2U2qBilPh/gwWUHHSrJ7Hxl4wHfZ/FSwYIES0MEOeQGdyKdnY7zfEnhWCWNS2QmImxg==", "team"=>{"title"=>"caio", "description"=>"Um importante processo social é a capacidade que possuem os indivíduos ou grupo social de modificar o comportamento de outros grupos ou pessoas. Estas manifestações estão associadas a uma importante interação social entre os homens que denominamos poder.\r\nO poder é toda a probabilidade de impor a própria vontade numa interação social, mesmo contra resistências. Ou seja, o poder presume uma ideia de potencial, podendo existir e não ser exercido. Trazendo esse conceito para o ambiente das organizações, o poder está inteiramente ligado a hierarquia. Os chefes e líderes precisam exercer o poder sob seus funcionários. Porém, existem várias formas diferentes de exercer esse poder hierárquico. Existem gestores que conseguem comandar os subordinados inspirando respeito e fazendo com que eles o obedeçam não apenas pela diferença hierárquica mas pelo respeito e confiança que o líder passa para os funcionários. E existem gestores que abusam do poder hierárquico, pressionando demais os colaboradores, explorando os funcionários, e comportamentos assim podem influenciar negativamente no andamento das atividades da organização, deixando os funcionários desmotivados em trabalhar naquele ambiente. "}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "Um importante processo social é a capacidade que possuem os indivíduos ou grupo social de modificar o comportamento de outros grupos ou pessoas. Estas manifestações estão associadas a uma importante interação social entre os homens que denominamos poder.\r\nO poder é toda a probabilidade de impor a própria vontade numa interação social, mesmo contra resistências. Ou seja, o poder presume uma ideia de potencial, podendo existir e não ser exercido. Trazendo esse conceito para o ambiente das organizações, o poder está inteiramente ligado a hierarquia. Os chefes e líderes precisam exercer o poder sob seus funcionários. Porém, existem várias formas diferentes de exercer esse poder hierárquico. Existem gestores que conseguem comandar os subordinados inspirando respeito e fazendo com que eles o obedeçam não apenas pela diferença hierárquica mas pelo respeito e confiança que o líder passa para os funcionários. E existem gestores que abusam do poder hierárquico, pressionando demais os colaboradores, explorando os funcionários, e comportamentos assim podem influenciar negativamente no andamento das atividades da organização, deixando os funcionários desmotivados em trabalhar naquele ambiente. "], ["updated_at", 2016-10-26 04:11:16 UTC], ["id", 8]]
+  [1m[35m (72.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 79ms (ActiveRecord: 73.2ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:11:16 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:14:04 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 119ms (Views: 114.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:16:55 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 118ms (Views: 112.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:18:45 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:19:01 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 01:20:59 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.5ms)
+  Rendered teams/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 97ms (Views: 93.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 01:21:12 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iXuO3xBo9tfoGYmDwKSf/IuSi7bJKQzqBC0EOtFicFqfELTA/fC4Ft/RyK4ccU7dyMrZCh8TnunWBAIgDceQwg==", "team"=>{"title"=>"caio", "description"=>"Um importante processo social é a capacidade que possuem os indivíduos ou grupo social de modificar o comportamento de outros grupos ou pessoas. Estas manifestações estão associadas a uma importante interação social entre os homens que denominamos poder.\r\nO poder é toda a probabilidade de impor a própria vontade numa interação social, mesmo contra resistências. Ou seja, o poder presume uma ideia de potencial, podendo existir e não ser exercido. Trazendo esse conceito para o ambiente das organizações, o poder está inteiramente ligado a hierarquia. Os chefes e líderes precisam exercer o poder sob seus funcionários. Porém, existem várias formas diferentes de exercer esse poder hierárquico. Existem gestores que conseguem comandar os subordinados inspirando respeito e fazendo com que eles o obedeçam não apenas pela diferença hierárquica mas pelo respeito e confiança que o líder passa para os funcionários. E existem gestores que abusam do poder hierárquico, pressionando demais os colaboradores, explorando os funcionários, e comportamentos assim podem influenciar negativamente no andamento das atividades da organização, deixando os funcionários desmotivados em trabalhar naquele ambiente. "}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:21:12 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/8/edit" for 127.0.0.1 at 2016-10-26 01:21:15 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (5.7ms)
+  Rendered teams/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 121ms (Views: 113.7ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/teams/8" for 127.0.0.1 at 2016-10-26 01:21:25 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xPO6QGaUCNMa29JUvsmy9+aeG89k68wcsWNUTEcD7AnSmIBfiwxGEi0Tk3liHGPWpcZJc7LRXh9jSlJWm6YMkQ==", "team"=>{"title"=>"caio", "description"=>"      Um importante processo social é a capacidade que possuem os indivíduos ou grupo social de modificar o comportamento de outros grupos ou pessoas. Estas manifestações estão associadas a uma importante interação social entre os homens que denominamos poder.\r\n      O poder é toda a probabilidade de impor a própria vontade numa interação social, mesmo contra resistências. Ou seja, o poder presume uma ideia de potencial, podendo existir e não ser exercido. Trazendo esse conceito para o ambiente das organizações, o poder está inteiramente ligado a hierarquia. Os chefes e líderes precisam exercer o poder sob seus funcionários. Porém, existem várias formas diferentes de exercer esse poder hierárquico. Existem gestores que conseguem comandar os subordinados inspirando respeito e fazendo com que eles o obedeçam não apenas pela diferença hierárquica mas pelo respeito e confiança que o líder passa para os funcionários. E existem gestores que abusam do poder hierárquico, pressionando demais os colaboradores, explorando os funcionários, e comportamentos assim podem influenciar negativamente no andamento das atividades da organização, deixando os funcionários desmotivados em trabalhar naquele ambiente. "}, "commit"=>"Update Team", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "      Um importante processo social é a capacidade que possuem os indivíduos ou grupo social de modificar o comportamento de outros grupos ou pessoas. Estas manifestações estão associadas a uma importante interação social entre os homens que denominamos poder.\r\n      O poder é toda a probabilidade de impor a própria vontade numa interação social, mesmo contra resistências. Ou seja, o poder presume uma ideia de potencial, podendo existir e não ser exercido. Trazendo esse conceito para o ambiente das organizações, o poder está inteiramente ligado a hierarquia. Os chefes e líderes precisam exercer o poder sob seus funcionários. Porém, existem várias formas diferentes de exercer esse poder hierárquico. Existem gestores que conseguem comandar os subordinados inspirando respeito e fazendo com que eles o obedeçam não apenas pela diferença hierárquica mas pelo respeito e confiança que o líder passa para os funcionários. E existem gestores que abusam do poder hierárquico, pressionando demais os colaboradores, explorando os funcionários, e comportamentos assim podem influenciar negativamente no andamento das atividades da organização, deixando os funcionários desmotivados em trabalhar naquele ambiente. "], ["updated_at", 2016-10-26 04:21:25 UTC], ["id", 8]]
+  [1m[35m (91.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/8
+Completed 302 Found in 99ms (ActiveRecord: 92.1ms)
+
+
+Started GET "/teams/8" for 127.0.0.1 at 2016-10-26 01:21:25 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:23:47 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 116ms (Views: 111.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/teams/8" for 127.0.0.1 at 2016-10-26 01:23:52 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v16VB0huEhwOqR60FoD1+DgUJS4g4j/eQV+BeqrBemVWBX98uKmCyj9LLhUL/+z/D+ku0fW3twtArhmOMXVIFA==", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 8]]
+  [1m[35m (86.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 90ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:23:52 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:23:56 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 92ms (Views: 83.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-26 01:23:59 -0300
+Processing by OkrsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (2.5ms)
+  Rendered okrs/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 82ms (Views: 70.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-26 01:24:19 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vuAjFfLekZUNbFn2KWUA+aYd1kA+s2xUyen3GFZ2ruZXu8luAhkBQzyOaVc0Ghn+keDdv+vm5IHIGG/szcKclw==", "okr"=>{"title"=>"Coias", "description"=>"aklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdkla\r\n"}, "commit"=>"Create Okr"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Coias"], ["description", "aklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdkla\r\n"], ["created_at", 2016-10-26 04:24:19 UTC], ["updated_at", 2016-10-26 04:24:19 UTC]]
+  [1m[35m (167.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/45
+Completed 302 Found in 176ms (ActiveRecord: 168.4ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:24:19 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (11.1ms)
+  Rendered okrs/show.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 115ms (Views: 111.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:24:32 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 76ms (Views: 73.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:24:46 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.5ms)
+  Rendered okrs/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 78ms (Views: 73.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:28:14 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.1ms)
+  Rendered okrs/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 99ms (Views: 96.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:28:44 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.5ms)
+  Rendered okrs/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:29:22 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.1ms)
+  Rendered okrs/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:30:41 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.2ms)
+  Rendered okrs/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:30:43 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (3.4ms)
+  Rendered okrs/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 92ms (Views: 87.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:30:53 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.4ms)
+  Rendered okrs/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 107ms (Views: 103.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:31:06 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (3.6ms)
+  Rendered okrs/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 121ms (Views: 116.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:35:17 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.4ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.2ms)
+  Rendered okrs/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 121ms (Views: 115.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:35:57 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.7ms)
+  Rendered okrs/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 83ms (Views: 77.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:37:48 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (3.1ms)
+  Rendered okrs/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 103ms (Views: 98.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:39:38 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.7ms)
+  Rendered okrs/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 84ms (Views: 81.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:39:42 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.6ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:39:45 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.0ms)
+  Rendered okrs/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 81ms (Views: 78.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:39:51 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 121ms (Views: 113.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/okrs/45/edit" for 127.0.0.1 at 2016-10-26 01:39:54 -0300
+Processing by OkrsController#edit as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/edit.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (3.9ms)
+  Rendered okrs/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 76ms (Views: 72.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/okrs/45" for 127.0.0.1 at 2016-10-26 01:39:58 -0300
+Processing by OkrsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ywKIGzFmTtiBzKPTT1j2J9Wa//3iOWK68AJPqSOD26wiWWJgwaHeDrAuk3JSJ+8g4mf0Ajds6m/x89dduDfp3Q==", "okr"=>{"title"=>"Coias", "description"=>"aklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdklaaklsjdkajsdlkajskdjaslkdjaklsdjkasjdklasjdkla\r\n"}, "commit"=>"Update Okr", "id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/45
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs/45" for 127.0.0.1 at 2016-10-26 01:39:58 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.4ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 45]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.8ms)
+  Rendered okrs/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:40:04 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 82ms (Views: 79.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-26 01:40:06 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (2.6ms)
+  Rendered teams/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2016-10-26 01:40:19 -0300
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Ww30Pi+cJnvxEPrk+cK5Z8ABFeZz8s+hnDnWsBwSZs4N92rCHngT94mc0qOmBPiqP0PqEyaQ+uHgX+uW8R76g==", "team"=>{"title"=>"qq", "description"=>"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "qq"], ["description", "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"], ["created_at", 2016-10-26 04:40:19 UTC], ["updated_at", 2016-10-26 04:40:19 UTC]]
+  [1m[35m (121.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/9
+Completed 302 Found in 129ms (ActiveRecord: 122.5ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:40:20 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 76ms (Views: 72.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/9/edit" for 127.0.0.1 at 2016-10-26 01:40:31 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.9ms)
+  Rendered teams/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 104ms (Views: 99.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/teams/9" for 127.0.0.1 at 2016-10-26 01:40:38 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u+G86NoSdzgdKvO81L8JFsXMRzpcy6tQrOrtML4Nrf0A9Jg/ehpKozxdX6L1GYv910OfbU8v6MlMRshBYvKazg==", "team"=>{"title"=>"qq", "description"=>"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}, "commit"=>"Update Team", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"], ["updated_at", 2016-10-26 04:40:38 UTC], ["id", 9]]
+  [1m[35m (64.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/9
+Completed 302 Found in 73ms (ActiveRecord: 64.9ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:40:38 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:41:17 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:41:30 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 96ms (Views: 93.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:42:03 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 120ms (Views: 115.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:42:07 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 91ms (Views: 87.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:42:09 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 105ms (Views: 99.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:43:39 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 135ms (Views: 128.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:44:30 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 122ms (Views: 117.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:45:06 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/9/edit" for 127.0.0.1 at 2016-10-26 01:45:12 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (2.8ms)
+  Rendered teams/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/teams/9" for 127.0.0.1 at 2016-10-26 01:45:15 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OZJsthZpX7FSM7wPk200ASd0H9ShsyayABgd2StgF8OCh0hhtmFiKnNEEBGyy7bqNfvHg7JXZSvgtDio958g8A==", "team"=>{"title"=>"qq", "description"=>"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"}, "commit"=>"Update Team", "id"=>"9"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/9
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/9" for 127.0.0.1 at 2016-10-26 01:45:15 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 90.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:45:18 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 86ms (Views: 82.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/okrs/45" for 127.0.0.1 at 2016-10-26 01:45:22 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+0ZFFFNawc3f/rJeRr3KMQNVH2ZVLaD79UcSQkqfWbgSHa9vo51RG+4cgv9bwtM2NKgUmYB4KC70toq20StryQ==", "id"=>"45"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 45]]
+  [1m[35m (103.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 108ms (ActiveRecord: 103.9ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:45:22 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:45:25 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/teams/9" for 127.0.0.1 at 2016-10-26 01:45:29 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wj+saXLPbYNlMqygEtVJA4QRKa9B4nCLBjDYPRdjb2ErZEYSggj9VVTQnAEPqlAEs+wiUJS3+F4HwUDJjNddEA==", "id"=>"9"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 9]]
+  [1m[35m (188.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 194ms (ActiveRecord: 189.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:45:29 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-26 01:45:31 -0300
+Processing by PresentationController#tree as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:45:32 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-26 01:45:35 -0300
+Processing by OkrsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (3.3ms)
+  Rendered okrs/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/okrs" for 127.0.0.1 at 2016-10-26 01:45:53 -0300
+Processing by OkrsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CzjdNyHQ6W8okXrWeIoweBPppGc5XCACU5bRUD3+AnjiYzdM0Rd5uRlzSndl9Sl/JBSvmOwJqNdSZ0mkpkowCQ==", "okr"=>{"title"=>"qq coisa", "description"=>"asdjalsjdlaksjdklasjdlkasjdklasjdklajsdklajsdkljaskldjaslkdjalksdjaklsjdkasldjaskdjalsdjalksdjaklsjdklasjdklasjdkajsdklasdalsdjasdlkaksjdaslkkdjasdlkasjdalskdjasdljasdlaksjdalklsdjalksdjlaksjdkalsjdkalsdalksjdlasdjkalsdjkalsjdlkasjdklasjdklasjdkjaskldjaskldjalksdjalksdjalsldjlaksdj"}, "commit"=>"Create Okr"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "okrs" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "qq coisa"], ["description", "asdjalsjdlaksjdklasjdlkasjdklasjdklajsdklajsdkljaskldjaslkdjalksdjaklsjdkasldjaskdjalsdjalksdjaklsjdklasjdklasjdkajsdklasdalsdjasdlkaksjdaslkkdjasdlkasjdalskdjasdljasdlaksjdalklsdjalksdjlaksjdkalsjdkalsdalksjdlasdjkalsdjkalsjdlkasjdklasjdklasjdkjaskldjaskldjalksdjalksdjalsldjlaksdj"], ["created_at", 2016-10-26 04:45:53 UTC], ["updated_at", 2016-10-26 04:45:53 UTC]]
+  [1m[35m (129.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs/46
+Completed 302 Found in 135ms (ActiveRecord: 130.1ms)
+
+
+Started GET "/okrs/46" for 127.0.0.1 at 2016-10-26 01:45:53 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 46]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (3.0ms)
+  Rendered okrs/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs/46" for 127.0.0.1 at 2016-10-26 01:48:04 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 46]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (1.9ms)
+  Rendered okrs/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 108ms (Views: 102.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/okrs/46" for 127.0.0.1 at 2016-10-26 01:48:08 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 46]]
+  Rendered collection of templates [0 times] (0.1ms)
+  Rendered krs/_form.html.erb (2.6ms)
+  Rendered okrs/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 82ms (Views: 78.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs/46" for 127.0.0.1 at 2016-10-26 01:48:24 -0300
+Processing by OkrsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering okrs/show.html.erb within layouts/application
+  [1m[36mKr Load (0.2ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 46]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered krs/_form.html.erb (2.1ms)
+  Rendered okrs/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 84ms (Views: 79.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:49:40 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/okrs/46" for 127.0.0.1 at 2016-10-26 01:49:43 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mw66QNQADgQKRaO2IyITgFSlOyN+R9p7MFBFJQ171L/aVVA7JMee0junkxc+XQqHY1gw3KsSUq4xod3Rls/mzg==", "id"=>"46"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 46]]
+  [1m[35m (190.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 195ms (ActiveRecord: 191.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:49:43 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 83ms (Views: 78.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-26 01:49:44 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-26 01:49:46 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 80ms (Views: 71.1ms | ActiveRecord: 0.4ms)
+
+

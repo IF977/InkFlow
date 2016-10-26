@@ -5,9 +5,10 @@
   <%= @team.title %>
 </p>
 
-<p>
+<p >
   <strong>Description:</strong>
-  <%= @team.description %>
+  <p id="p02" > <%= @team.description %>
+  </p>
 </p>
 
 <%= link_to 'Edit', edit_team_path(@team) %> |
