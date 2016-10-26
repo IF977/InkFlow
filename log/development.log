@@ -14588,3 +14588,613 @@ Processing by OkrsController#index as HTML
 Completed 200 OK in 161ms (Views: 134.7ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:40:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 977ms (Views: 967.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-10-25 20:40:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (8.7ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.2ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:52:36 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:52:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 20:52:39 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 167ms (Views: 151.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 20:52:42 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.3ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 91ms (Views: 82.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 20:53:05 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:53:07 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 127ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 20:53:09 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.5ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:53:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 90ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 20:53:18 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 20:53:20 -0300
+Processing by PresentationController#tree as HTML
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 91ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 20:53:21 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (1.4ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 161ms (Views: 158.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:53:26 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 127ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 20:53:27 -0300
+Processing by OkrsController#index as HTML
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 20:57:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:03:51 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:03:51 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 67ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:04:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:04:47 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:04:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (3.6ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 135ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 21:04:55 -0300
+Processing by PresentationController#tree as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:04:55 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 21:04:56 -0300
+Processing by OkrsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:04:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-25 21:04:57 -0300
+Processing by TeamController#manage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:04:57 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 119ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-25 21:04:58 -0300
+Processing by ContactController#us as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:04:58 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (3.0ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 167ms (Views: 165.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 21:05:04 -0300
+Processing by OkrsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:05:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 80ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 21:05:10 -0300
+Processing by OkrsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:05:10 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 110ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-10-25 21:05:14 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 88ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:05:18 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:05:18 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 21:05:23 -0300
+Processing by PresentationController#tree as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:05:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (4.4ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 164ms (Views: 161.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:05:24 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:05:24 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:06:08 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:06:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chart" for 127.0.0.1 at 2016-10-25 21:06:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/chart"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (10.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.7ms)
+Started GET "/chart/tree" for 127.0.0.1 at 2016-10-25 21:06:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/chart/tree"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (10.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.5ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:07:25 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PdLVHqnpICOKP1t9IqgPAtuDVuKVSmfn3tU1QGWnxqFizVq1Lmu5krbONWsuYFc/E8Sp1DLpk6Lz3Cb1Dmn8ww==", "user"=>{"email"=>"arthur@hjj.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "arthur@hjj.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-10-26 00:07:25 UTC], ["last_sign_in_at", 2016-10-23 19:10:59 UTC], ["sign_in_count", 4], ["updated_at", 2016-10-26 00:07:25 UTC], ["id", 8]]
+  [1m[35m (148.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 316ms (ActiveRecord: 148.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:07:25 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 79ms (Views: 77.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:07:37 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-10-25 21:07:43 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"s1C+gy1hntU/YJY2FeVID/MW8SBNT6KPQoPsTA2eoBLu209380eEi1NmZukJgKY3N1Pa9V7HjJbwvssBadmgjA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:07:43 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:07:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 21:07:47 -0300
+Processing by PresentationController#tree as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:07:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:08:02 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Iqa2lUW4P7ox6BygdnJii6ipN5XeHv12AV0PhZd7DkOjaJ3QlGJfjuNA16B/2zUCS1wwyNjccKURiosVjiGHcA==", "user"=>{"email"=>"arthur@hjj.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "arthur@hjj.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-10-26 00:08:02 UTC], ["last_sign_in_at", 2016-10-26 00:07:25 UTC], ["sign_in_count", 5], ["updated_at", 2016-10-26 00:08:02 UTC], ["id", 8]]
+  [1m[35m (176.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/presentation/tree
+Completed 302 Found in 336ms (ActiveRecord: 176.5ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 21:08:02 -0300
+Processing by PresentationController#tree as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 21:08:05 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 70ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/okrs/44" for 127.0.0.1 at 2016-10-25 21:08:10 -0300
+Processing by OkrsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GLVXjHDxQaFB+89opHLoYwG2G9IlJ3Apu1BfCEkeV6fm6VW9G9Jx4C2zQj6PI/34J8naBoBoh9UH54uGbgfgDw==", "id"=>"44"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT  "okrs".* FROM "okrs" WHERE "okrs"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 44]]
+  [1m[35m (68.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/okrs
+Completed 302 Found in 77ms (ActiveRecord: 69.4ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 21:08:10 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-25 21:08:13 -0300
+Processing by TeamController#manage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-25 21:08:16 -0300
+Processing by ContactController#us as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering contact/us.html.erb within layouts/application
+  Rendered contact/us.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 21:08:17 -0300
+Processing by PresentationController#tree as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 76ms (Views: 73.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 21:08:19 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/okrs/new" for 127.0.0.1 at 2016-10-25 21:08:20 -0300
+Processing by OkrsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering okrs/new.html.erb within layouts/application
+  Rendered okrs/_form.html.erb (3.2ms)
+  Rendered okrs/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:08:23 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-10-25 21:08:25 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXsCZkQ+EamS6VweEx8J/enqchKs+bhKqQ9qtGBY58I3JwBXLx0h6P6h0Ug4Thxmz5Wzxgm2T7YVuL46R0FQag=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:08:25 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:08:25 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-25 21:08:52 -0300
+Processing by TeamController#manage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:08:52 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 21:10:40 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 21:10:40 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /home/arthur/.rvm/gems/ruby-2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 67ms (Views: 58.2ms | ActiveRecord: 0.8ms)
+
+
