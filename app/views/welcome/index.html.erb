@@ -1,17 +1,13 @@
-<% if user_signed_in?  %>
-<h1> You are logged in as: <%=current_user.email%>  </h1>
+<div align="center"><strong><h1>Welcome to Inkflow </h1></strong></div>
+<br>
+<br>
+<br>
+
+<h2> You are logged in as: <%=current_user.email%>  </h2>
 <br>
 
 <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
 
-<%else%>
-
-<h1>Welcome to Inkflow </h1>
-<br>
-<%= button_to "Sign In", new_user_session_path, method: :get %>
-<br>
-<%= button_to "Create Account", new_user_registration_path, method: :get %>
 
 
-<%end%>
 
