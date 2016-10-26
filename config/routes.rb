@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'team/manage'
-
+  resources :teams
   resources :okrs do
   	resources :krs do
   		member do

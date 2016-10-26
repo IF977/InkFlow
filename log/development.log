@@ -15344,3 +15344,397 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 113ms (Views: 109.0ms | ActiveRecord: 0.2ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTeams (20161026012600)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161026012600"]]
+  [1m[35m (77.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_krs_on_okr_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_krs_on_okr_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2016-10-25 22:27:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 1523ms (Views: 1472.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-25 22:28:02 -0300
+Processing by TeamController#manage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 141ms (Views: 134.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:28:14 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (62.4ms)
+  Rendered teams/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 200ms (Views: 186.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:31:16 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (1.0ms)
+  Rendered teams/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/caio/InkFlow/app/views/teams/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+...ffer.append=( f.text_area(10) :description );@output_buffer....
+...                               ^):
+  
+app/views/teams/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/teams/new.html.erb:3:in `_app_views_teams_new_html_erb__1362411333300784706_69816877958240'
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.6ms)
+Started GET "/" for 127.0.0.1 at 2016-10-25 22:34:18 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 186ms (Views: 182.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team/manage" for 127.0.0.1 at 2016-10-25 22:34:22 -0300
+Processing by TeamController#manage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering team/manage.html.erb within layouts/application
+  Rendered team/manage.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 111ms (Views: 108.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team/new" for 127.0.0.1 at 2016-10-25 22:34:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/team/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (28.4ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.2ms)
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.2ms)
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:34:33 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (5.3ms)
+  Rendered teams/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 128ms (Views: 123.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:36:05 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (4.6ms)
+  Rendered teams/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:36:33 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (5.4ms)
+  Rendered teams/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 135ms (Views: 131.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 22:41:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 827ms (Views: 771.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-25 22:41:46 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 132ms (Views: 120.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:42:38 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (68.2ms)
+  Rendered teams/new.html.erb within layouts/application (69.7ms)
+Completed 200 OK in 172ms (Views: 161.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2016-10-25 22:42:45 -0300
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (4.3ms)
+  Rendered teams/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 111ms (Views: 107.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2016-10-25 22:42:57 -0300
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ab2+ajVqa8AvN7+sc3D9SER0u9aD3Y/1CxmCckTLx6K+y1SrNxWpZ9q19YereJ7QiZSq/AHUmHnu2RlTkd4Khg==", "team"=>{"title"=>"Caio", "description"=>"Caio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdf"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Caio"], ["description", "Caio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdf"], ["created_at", 2016-10-26 01:42:57 UTC], ["updated_at", 2016-10-26 01:42:57 UTC]]
+  [1m[35m (136.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/1
+Completed 302 Found in 148ms (ActiveRecord: 137.2ms)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2016-10-25 22:42:57 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 99ms (Views: 94.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2016-10-25 22:43:31 -0300
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (3.0ms)
+  Rendered teams/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/teams/1" for 127.0.0.1 at 2016-10-25 22:43:48 -0300
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kV7k9xQsY53S7XVexovZePOp07RFaomSgGWyc1+uSFF4kIU6k2RJJX6IdyOtOLAEDzst2mVGEReUR1aKgiKaig==", "team"=>{"title"=>"Caio", "description"=>"Caio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdf"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "teams" SET "description" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["description", "Caio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdfCaio cavalcanti de alvbuawhdasfajkshdjaksbcjksbdja dhasbcja kgdfua gwdjf aiudf gajsd gfuasdf"], ["updated_at", 2016-10-26 01:43:48 UTC], ["id", 1]]
+  [1m[35m (133.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams/1
+Completed 302 Found in 147ms (ActiveRecord: 135.7ms)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2016-10-25 22:43:48 -0300
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-25 22:44:20 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 105ms (Views: 101.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/teams/1" for 127.0.0.1 at 2016-10-25 22:45:43 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jSj1GJOUhtqusNgMyAkl1Ap7ZzE4/gW/ZkJsEe/8dV36ymEdQ48c3Z+OQDxYG1xzR30s6XnIBcAst1DnX4Xadw==", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 1]]
+  [1m[35m (84.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 91ms (ActiveRecord: 85.0ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-25 22:45:43 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 94ms (Views: 90.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 22:45:45 -0300
+Processing by OkrsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering okrs/index.html.erb within layouts/application
+  [1m[36mOkr Load (0.2ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs"[0m
+  Rendered okrs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 121ms (Views: 106.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/presentation/tree" for 127.0.0.1 at 2016-10-25 22:45:48 -0300
+Processing by PresentationController#tree as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering presentation/tree.html.erb within layouts/application
+  Rendered presentation/tree.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-25 22:45:50 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 108ms (Views: 103.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 22:45:53 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 93ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-10-25 22:45:54 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qCWP3ph0nm67SXv+/Ls3Yl/D6QYQgMFhsiK9+D4UKhLfxxvbSG8EaYp3485sqU7FEsWi3lG2wR7414EOjm2FOA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-25 22:45:54 -0300
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 22:45:54 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 101ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-25 22:45:56 -0300
+Processing by TeamsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 22:45:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 100ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-10-25 22:45:58 -0300
+Processing by TeamsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 22:45:58 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/okrs" for 127.0.0.1 at 2016-10-25 22:46:00 -0300
+Processing by OkrsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 22:46:00 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact/us" for 127.0.0.1 at 2016-10-25 22:46:01 -0300
+Processing by ContactController#us as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-10-25 22:46:01 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /home/caio/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-bootstrap-views-0.0.9/app/views/devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 112ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
