@@ -1,6 +1,9 @@
 <h1>OKR</h1>
+<%if @okrs.blank?%>
 
+<div align="center"><h2>There are not any OKR to show.</h2></div>
 
+<%else%>
 <table style="width:100%">
   
 <thead>
@@ -37,4 +40,9 @@
 <br>
 <br>
 <br>
-<%= button_to 'New OKR', new_okr_path, method: :get%>
+<%end%>
+<br>
+<br>
+
+<div align="center"><%= button_to 'New OKR', new_okr_path, method: :get%></div>
+
