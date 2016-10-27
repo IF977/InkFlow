@@ -1,35 +1,10 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Teams</h1>
 <% if @teams.blank? %>
-<p>There are not any teams currently in your account.
-<table>
-  <thead>
-  <link rel="stylesheets" href="teams.scss">
-    <tr>
-      <th>  </th>
-      <th> </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<p>There are not any teams currently in your account. </p>
 
-  <tbody>
-    <% @teams.each do |team| %>
-      <tr>
-        <td><%= team.title %></td>
-        <td id="td02" ><%= team.description %></td>
-        <td><%= link_to 'Show', team %></td>
-        <td><%= link_to 'Edit', edit_team_path(team) %></td>
-        <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<br> <br>
 <%= button_to 'New Team', new_team_path, method: :get %>
-</p>
 
 <% else %>
 <p>
