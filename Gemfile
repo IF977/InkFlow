@@ -2,10 +2,15 @@ source 'https://rubygems.org'
 
 # DEVISE
 gem 'devise'
-# TWITTER
+# BOOTSTRAP
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 #DEVISE VIEWS
 gem 'devise-bootstrap-views'
+
+
+
+
 gem 'cucumber-rails',:require => false
 gem 'capybara'
 gem 'capybara-webkit'
