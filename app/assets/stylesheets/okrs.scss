@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#okrs {text-align: justify;
+#okrd {text-align: justify;
             hanging-punctuation: allow-end;
             word-break: normal;
             word-wrap: break-word;}
+#okrd2{max-width: 60ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;}

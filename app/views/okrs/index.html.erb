@@ -5,15 +5,15 @@
 
 <%else%>
 
-    
-     
+
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
       <table class="table table-condensed table-hover table-bordered">
 
       <thead>
-  <link rel="stylesheets" href="okrs.scss">   
+  <link rel="stylesheets" href="okrs.scss">
 
       <tr class="success">
             <th><div align="center">
@@ -28,28 +28,28 @@
       </tr>
      </thead>
 
- 
+
 <tbody>
 <% @okrs.each do |okr| %>
 
   <tr class="warning">
-    
-    <td><strong><%= okr.title.first(15) %></strong></td>
-    <td><%= okr.description.first(45) %></td> 
 
-      
+    <td><strong><%= okr.title.first(15) %></strong></td>
+    <td id="okrd2"><%= okr.description %></td>
+
+
     <td>
         <%= link_to 'Enter', okr, method: :get %>
-      
-      
+
+
         <%= link_to 'Edit', edit_okr_path(okr), method: :get%>
-      
-      
+
+
         <%= link_to 'Destroy', okr, method: :delete, data: { confirm: 'Are you sure?' } %>
-      
-    
+
+
     </td>
-    
+
 
   </tr>
 
