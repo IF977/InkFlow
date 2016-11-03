@@ -1,13 +1,25 @@
-<div align="center"><strong><h1>Welcome to Inkflow </h1></strong></div>
-<br>
-<br>
-<br>
+<style>
+h3 {
+  size: 22;
+  
+}
+</style>
 
-<div align="center"><h2> You are logged in as: <%=current_user.email%>  </h2></div>
-<br>
+<div align="left">
+	<h3>
+	<strong>
+	Bem Vindo ao Inkflow, <em>logado como: <%=current_user.email%></em>
+	</strong>
+	</h3>
 
-<div align="center"><%= button_to "Sign Out", destroy_user_session_path, method: :delete %></div>
+</div>
+<br><br>
 
+<div class="container">
 
+	<p class="text-muted lead">
+			O projeto de uma Aplicação Web que veio para sanar o problema do NTI (Núcleo de Tecnologia da Informação). O NTI adotou a metodologia OKR em seus projetos e vem enfrentando uma série de dificuldades pricipalmente no quesito visualização.
 
-
+			Inkflow soluciona esses problemas com uma interface leve e simples de ser utilizada.
+	</p>
+</div>
