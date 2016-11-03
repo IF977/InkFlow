@@ -10,30 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161103194015) do
-
-  create_table "krs", force: :cascade do |t|
-    t.string   "content"
-    t.integer  "okr_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.datetime "completed_at"
-    t.index ["okr_id"], name: "index_krs_on_okr_id"
-  end
-
-  create_table "okrs", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "teams", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
+ActiveRecord::Schema.define(version: 20161103202348) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

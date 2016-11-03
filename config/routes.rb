@@ -1,16 +1,7 @@
 Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :teams
-  resources :okrs do
-  	resources :krs do
-  		member do
-  			patch :complete
-  		end
 
-  	end
-
-  end
   
   get 'contact/us'
 
