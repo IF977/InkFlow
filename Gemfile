@@ -8,6 +8,8 @@ gem 'bootstrap-sass'
 #DEVISE VIEWS
 gem 'devise-bootstrap-views'
 
+gem 'rails_admin'
+
 
 
 
