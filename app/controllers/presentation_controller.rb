@@ -1,4 +1,5 @@
 class PresentationController < ApplicationController
-  def tree
+  def index
   end
+  
 end

@@ -21,6 +21,14 @@
   padding: 0;
   position: fixed;
 }
+.navbar-brand{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
 </style>
 
   </head>
@@ -28,30 +36,36 @@
   <body style="background-color:#f2f2f2">
 
   <font style = "font-family:verdana", color = 'purple'>
-    <div align="center"> <%= image_tag("logo/logo.png", width: "200px") %> </div>
+    
 
    
-<div class="container-fluid">
+
   <div class="row">
     <div class="col-md-12">
-      <nav class="navbar navbar-inverse navbar-default" role="navigation">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
            
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button> <a class="navbar-brand" href="/">Inkflow</a>
+          </button>
+          <a class="navbar-brand" href="/">
+            <%= image_tag("logo/logo.png", width: "100px", height: "40px") %>
+          </a>
         </div>
         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="/presentation/tree">Organograma</a>
+              <a href="/presentation/index">Organograma</a>
             </li>            
             <li>
-              <a href="#">Equipes</a>
+              <a href="#">Criar</a>
             </li> 
             <li>
-              <a href="/contact/us">Contato</a>
+              <a href="#">Tutorial</a>
+            </li> 
+            <li>
+              <a href="/contact/index">Contato</a>
             </li> 
 
 
@@ -87,7 +101,7 @@
       </nav>
     </div>
   </div>
-</div>
+
 
 
 
