@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'create/index'
+
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
