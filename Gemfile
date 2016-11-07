@@ -10,6 +10,9 @@ gem 'devise-bootstrap-views'
 
 gem 'rails_admin'
 
+group :production do
+  gem 'pg'
+end
 
 
 
@@ -20,7 +23,7 @@ gem 'capybara-webkit'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -55,6 +58,7 @@ group :development, :test do
   gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'rspec-rails'
+  gem 'sqlite3'
 end
 
 group :development do
