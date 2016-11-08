@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'contact/index' 
   get 'presentation/index'
   get 'welcome/index'
+
+  resources :teams do
+  	resources :okrs
+  end
   
 
 root 'welcome#index'
