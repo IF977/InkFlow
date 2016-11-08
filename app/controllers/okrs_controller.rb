@@ -23,7 +23,6 @@ class OkrsController < ApplicationController
   # GET /okrs/1/edit
   def edit
     @team = Team.find(params[:team_id])
-
   end
 
   # POST /okrs
@@ -75,7 +74,7 @@ class OkrsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-     def set_team
+    def set_team
       @team = Team.find(params[:team_id])
     end
 

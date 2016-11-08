@@ -1,0 +1,1 @@
+json.partial! "krs/kr", kr: @kr
