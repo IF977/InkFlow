@@ -33,7 +33,7 @@ class KrsController < ApplicationController
     @okr = Okr.find(params[:okr_id])
     @kr = Kr.new(kr_params)
 
-    
+
       if @kr.save
         redirect_to action: "show", id: @kr.id
 
@@ -47,7 +47,7 @@ class KrsController < ApplicationController
 
         #format.html { render :new }
         #format.json { render json: @kr.errors, status: :unprocessable_entity }
-      
+
       end
   end
 
@@ -60,7 +60,7 @@ class KrsController < ApplicationController
           redirect_to action: "show", id: @kr.id, notice: "O KR foi editado com sucesso!"
      else
 
-     
+
     end
   end
 
