@@ -1,0 +1,1 @@
+json.array! @krs, partial: 'krs/kr', as: :kr

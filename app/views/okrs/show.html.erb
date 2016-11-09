@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @okr.title %>
+</p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @okr.description %>
+</p>
+
+<p>
+  <strong>Equipe:</strong>
+  <%= @team.title %>
+</p>
+
+<%= link_to 'Mostrar KR', team_okr_krs_path(@team, @okr) %>
+<br>
+
+<%= link_to 'Editar', edit_team_okr_path(@team, @okr) %> |
+<%= link_to 'Voltar', team_okrs_path %>

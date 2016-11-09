@@ -2,12 +2,19 @@ Rails.application.routes.draw do
 
 
 
+  
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   
   get 'contact/index' 
   get 'presentation/index'
   get 'welcome/index'
+
+  resources :teams do
+  	resources :okrs do
+  		resources :krs
+  	end
+  end
   
 
 root 'welcome#index'

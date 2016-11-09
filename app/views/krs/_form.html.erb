@@ -1,0 +1,32 @@
+<%= form_for(kr) do |f| %>
+  <% if kr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(kr.errors.count, "error") %> prohibited this kr from being saved:</h2>
+
+      <ul>
+      <% kr.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :howtoscore %>
+    <%= f.text_area :howtoscore %>
+  </div>
+
+  <div class="field">
+    <%= f.label :okr_id %>
+    <%= f.text_field :okr_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

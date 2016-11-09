@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Krs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>How to score</th>
+      <th>OKR</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @okr.krs.each do |kr| %>
+      <tr>
+        <td><%= kr.title %></td>
+        <td><%= kr.howtoscore %></td>
+        <td><%= @okr.title %></td>
+        <td><%= link_to 'Mostrar', {:action => 'show', :id => kr.id} %></td>
+        <td><%= link_to 'Editar', {:action => 'edit', :id => kr.id} %></td>
+        <td><%= link_to 'Excluir', {:action => 'destroy', :id => kr.id}, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo KR', new_team_okr_kr_path(@team, @okr) %>
