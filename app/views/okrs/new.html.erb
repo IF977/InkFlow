@@ -1,6 +1,7 @@
 <h1>New Okr</h1>
 
 <%= form_for([@team, @team.okrs.build]) do |f| %>
+
  <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>
@@ -12,8 +13,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :team_id %>
-    <%= f.text_field :team_id %>
+    <%= f.hidden_field :team_id %>
+    <%= f.hidden_field :team_id %>
   </div>
 
   <div class="actions">

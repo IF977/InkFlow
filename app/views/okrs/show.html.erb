@@ -15,5 +15,8 @@
   <%= @team.title %>
 </p>
 
+<%= link_to 'Mostrar KR', team_okr_krs_path(@team, @okr) %>  
+<br>
+
 <%= link_to 'Editar', edit_team_okr_path(@okr) %> |
 <%= link_to 'Voltar', team_okrs_path %>
