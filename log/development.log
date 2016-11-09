@@ -46052,3 +46052,115 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.2ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_krs_on_okr_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_krs_on_okr_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_okrs_on_team_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_okrs_on_team_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2016-11-09 19:15:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-09 19:15:35 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 7688ms (Views: 7672.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-11-09 19:15:46 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dP1JDh14dLc+RfAP+zRIlP+NcHBCasOqVCTyeuC4UlvVVJ4iWV9CZC6go7cpKNo9nvH/WE2tcGGwnJs+RrhJVg==", "user"=>{"email"=>"anf2@cin.ufpe.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "anf2@cin.ufpe.br"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-11-09 22:15:46 UTC], ["last_sign_in_at", 2016-11-09 21:18:58 UTC], ["sign_in_count", 17], ["updated_at", 2016-11-09 22:15:46 UTC], ["id", 5]]
+  [1m[35m (92.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 266ms (ActiveRecord: 96.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-09 19:15:46 -0300
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 130ms (Views: 127.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-11-09 19:15:48 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 84ms (Views: 72.4ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/teams/9" for 127.0.0.1 at 2016-11-09 19:15:51 -0300
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JvdN4ytnRfzVuADbpERaEMy/KwjF7oX7y+iFm7MmthgORGO2S8WJ+tSJwWWWN8nBaQDVCp7WWfZOYb+v2diQxg==", "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOkr Load (0.1ms)[0m  [1m[34mSELECT "okrs".* FROM "okrs" WHERE "okrs"."team_id" = ?[0m  [["team_id", 9]]
+  [1m[36mKr Load (0.1ms)[0m  [1m[34mSELECT "krs".* FROM "krs" WHERE "krs"."okr_id" = ?[0m  [["okr_id", 16]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "krs" WHERE "krs"."id" = ?[0m  [["id", 20]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "okrs" WHERE "okrs"."id" = ?[0m  [["id", 16]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 9]]
+  [1m[35m (203.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/teams
+Completed 302 Found in 260ms (ActiveRecord: 204.8ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2016-11-09 19:15:51 -0300
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  Rendered teams/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/presentation/index" for 127.0.0.1 at 2016-11-09 19:16:01 -0300
+Processing by PresentationController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering presentation/index.html.erb within layouts/application
+  Rendered presentation/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.5ms)
+
+
