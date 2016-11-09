@@ -1,7 +1,7 @@
 <h1>Editing Kr</h1>
 
 <%= form_for ([@team, @okr, @kr]) do |f| %>
-  
+
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>
@@ -13,8 +13,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :okr_id %>
-    <%= f.text_field :okr_id %>
+    <%= f.hidden_field :okr_id %>
+    <%= f.hidden_field :okr_id %>
   </div>
 
   <div class="actions">
