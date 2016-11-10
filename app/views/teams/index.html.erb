@@ -1,29 +1,40 @@
-<p id="notice"><%= notice %></p>
+<div>
+<h1><strong>
+Equipes
+</strong></h1>
 
-<h1>Equipes</h1>
+<div align="right">
+<%= link_to 'Nova Equipe', new_team_path %>  
+</div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Descrição</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.8s;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.card:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+</style>
 
-  <tbody>
-    <% @teams.each do |team| %>
-      <tr>
-        <td><%= team.title %></td>
-        <td><%= team.description %></td>
-        <td><%= link_to 'Mostrar', team %></td>
-        <td><%= link_to 'Editar', edit_team_path(team) %></td>
-        <td><%= link_to 'Excluir', team, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<% @teams.each do |team| %>
+<div class="card" align="center">  
+  <div class="container">
+    <h4><b>Equipe: <%= team.title %></b></h4>
+    <p><%= team.description %></p>
+  <%= link_to 'Entrar', team %> |
+  <%= link_to 'Editar', edit_team_path(team) %> |
+  <%= link_to 'Excluir', team, method: :delete, data: { confirm: 'Tem certeza?' } %>
+  </div>
+</div>
+<%end%>
 <br>
 
-<%= link_to 'Nova Equipe', new_team_path %>
+
