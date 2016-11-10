@@ -8,3 +8,4 @@
 
 
 User.create(username: "arthurnfarias", first_name: "Arthur", last_name: "Farias", email: "anf2@cin.ufpe.br", password: "264895", admin: true)
+User.create(username: "ccat", first_name: "Caio", last_name: "Cavalcanti", email: "ccat@cin.ufpe.br", password: "123456", admin: true)

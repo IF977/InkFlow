@@ -1,12 +1,12 @@
-<div>
+
 <h1><strong>
 Equipes
 </strong></h1>
 
-<div align="right">
-<%= link_to 'Nova Equipe', new_team_path %>  
+<div align="center">
+<%= button_to 'Nova Equipe', new_team_path, method: :get %>  
 </div>
-</div>
+<br>
 
 <style>
 .card {
@@ -15,7 +15,7 @@ Equipes
     width: 100%;
     border-radius: 5px;
     padding: 10px;
-}
+  }
 .card:hover {
     box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
