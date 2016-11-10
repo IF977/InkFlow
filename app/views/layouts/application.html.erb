@@ -26,6 +26,10 @@
   padding-bottom: 5px;
 }
 
+.dropdown {
+  padding-right: 15px;
+}
+
 
 
 
@@ -59,7 +63,7 @@
               <a href="/presentation/index">Organograma</a>
             </li>    
 
-           <li>
+            <li>
               <a href="/teams">Equipes</a>
             </li> 
             <li>
@@ -74,8 +78,16 @@
           <%if user_signed_in?%>
           <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=current_user.email%><strong class="caret"></strong></a>
-              
+                
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <%if current_user.username.empty?%>
+                <%=current_user.email%>
+                <%else%>
+                <%= current_user.username %>
+                <%end%>
+                <strong class="caret"></strong></a>
+                
+
               <ul class="dropdown-menu">
 
                                
@@ -86,8 +98,6 @@
                 <%end%>
                 <li>
                   <%= link_to 'Editar', edit_user_registration_path, method: :get %>
-                <li>
-                  <%= link_to 'Cancelar Conta', edit_user_registration_path, method: :delete, data: { confirm: 'Tem certeza?' } %>
                 </li>
                 <li class="divider">
                 </li>
