@@ -1,14 +1,5 @@
 <style>
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.8s;
-    width: 100%;
-    border-radius: 5px;
-    padding: 10px;
-}
-.card:hover {
-    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
-}
+
 
 </style>
 
@@ -21,28 +12,55 @@ Equipes
 <%if @teams.empty?%>
 <h2>Não existem equipes criadas para serem exibidas. Clique no botão abaixo para começar a criar.</h2>
 <%end%>
-<%= button_to 'Nova Equipe', new_team_path, method: :get %>  
+<%= button_to 'Nova Equipe', new_team_path, method: :get, class: "btn btn-primary" %>  
 </div>
 </div>
 <br>
 
+<% linhas = ((@teams.count) / 3.0).ceil  %>
 
 
-
-
-<% @teams.each do |team| %>
-<div class="card" align="center">  
-  <div class="container">
-    <h4><b>Equipe: <%= team.title %></b></h4>
-    <p><%= simple_format(team.description) %></p>
-  <%= link_to 'Entrar', team %> |
-  <%= link_to 'Editar', edit_team_path(team) %> |
-  <%= link_to 'Excluir', team, method: :delete, data: { confirm: 'Tem certeza?' } %>
+<%contagem = 0%>
+<%for i in 1..linhas%>
+  <div class="row">
+    <div class="col-md-12">
+  <%for p  in 1..3 %>
+    <%if contagem < @teams.count%>
+    <%team = @teams[contagem]%> 
+    <div class="col-md-4" >
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+             <h4><strong><%= team.title %></strong></h4>
+          </div>
+          <div class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p><%= simple_format(team.description) %></p>
+            </div>  
+            </div>
+        <div class="panel-footer">
+        <div class="row">
+        <div class="col-md-12">
+        <div class="col-md-1">
+        <%= button_to team, method: :get, class: "btn btn-default", title:"Entrar" do %>
+        <span class="glyphicon glyphicon-log-in"></span>
+        <%end%></div> 
+        <div class="col-md-1">
+        <%= button_to edit_team_path(team), method: :get, class: "btn btn-default", title:"Editar" do  %>
+        <span class="glyphicon glyphicon-pencil"></span>
+        <%end%> </div>
+        <div class="col-md-1">
+        <%= button_to team, method: :delete, class: "btn btn-default", data: { confirm: 'Tem certeza?' }  do%>
+        <span class="glyphicon glyphicon-remove"></span>
+        <%end%></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+    </div>
+    <%contagem += 1%>
+    <%end%>
+  <%end%>
+    </div>
   </div>
-</div>
-<br>
 <%end%>
-<br>
-
-
-
