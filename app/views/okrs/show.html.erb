@@ -1,22 +1,35 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @okr.title %>
-</p>
+<div class="row">
+	<h2><strong>
+		<%= @team.title %>
+	</strong></h2>
+</div>
 
-<p>
-  <strong>Descrição:</strong>
-  <%= @okr.description %>
-</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-2">			
+			</div>
+				<div class="col-md-8">
+					<div class="jumbotron well">
+						<h1><%= @okr.title %></h1>
+						<h2>Descrição:</h2>
+						<p><%= simple_format(@okr.description) %></p>
+						<hr>
+						<div align="center">
+						<%= link_to 'Mostrar KR', team_okr_krs_path(@team, @okr), class: "btn btn-primary" %>
+						<%= link_to 'Editar', edit_team_okr_path(@team, @okr), class: "btn btn-primary" %> 
+						<%= link_to 'Voltar', team_okrs_path, class: "btn btn-primary" %>
+						</div>
 
-<p>
-  <strong>Equipe:</strong>
-  <%= @team.title %>
-</p>
+						
+					</div>
+				</div>
+			<div class="col-md-2">			
+			</div>
+		</div>
+	</div>
+</div>
 
-<%= link_to 'Mostrar KR', team_okr_krs_path(@team, @okr) %>
-<br>
-
-<%= link_to 'Editar', edit_team_okr_path(@team, @okr) %> |
-<%= link_to 'Voltar', team_okrs_path %>
+  
+  
