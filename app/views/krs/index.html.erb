@@ -1,4 +1,4 @@
-<style> 
+<style>
 
 th {
     text-align: center;
@@ -8,7 +8,7 @@ th {
 }
 
 td{
-    background-color: white;    
+    background-color: white;
     text-align: center;
     font-size: 20px;
     color: black;
@@ -30,7 +30,7 @@ td{
 
 <div class="row">
   <div class="col-md-12">
-    <div class="col-md-5">      
+    <div class="col-md-5">
     </div>
       <div class="col-md-1">
         <%= button_to new_team_okr_kr_path(@team, @okr), method: :get, class: "btn btn-primary", title:"Criar OKR" do %>
@@ -42,9 +42,9 @@ td{
         <span class="glyphicon glyphicon-arrow-left"></span>
         <%end%>
       </div>
-    <div class="col-md-5">      
+    <div class="col-md-5">
     </div>
-  </div>  
+  </div>
 </div>
 
 
@@ -53,12 +53,12 @@ td{
 
 <div class="container-fluid">
   <div class="row">
-    
+
     <div class="col-md-12">
       <table class="table table-bordered">
         <thead>
           <tr>
-            
+
             <th class="nameokr">
               KR
             </th>
@@ -76,9 +76,9 @@ td{
         </thead>
         <tbody>
           <% @okr.krs.each do |kr| %>
-          <tr>            
+          <tr>
             <td>
-              <strong><%= kr.title %></strong>
+              <strong><%= link_to kr.title, {:action => 'show', :id => kr.id} %></strong>
             </td>
             <td>
               <%= simple_format(kr.howtoscore) %>
@@ -90,12 +90,12 @@ td{
               <%= link_to 'Mostrar', {:action => 'show', :id => kr.id}, class: "btn btn-default"%>
               <%= link_to 'Editar', {:action => 'edit', :id => kr.id}, class: "btn btn-default" %>
               <%= link_to 'Excluir', {:action => 'destroy', :id => kr.id}, method: :delete, data: { confirm: 'Tem certeza?' }, class: "btn btn-default" %>
-            </td>            
+            </td>
           </tr>
-          <%end%>          
+          <%end%>
         </tbody>
       </table>
     </div>
-    
+
   </div>
 </div>

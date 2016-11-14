@@ -1,4 +1,4 @@
-<style> 
+<style>
 
 th {
     text-align: center;
@@ -8,7 +8,7 @@ th {
 }
 
 td{
-    background-color: white;    
+    background-color: white;
     text-align: center;
     font-size: 20px;
     color: black;
@@ -28,9 +28,10 @@ td{
 
 
 <h1><strong><em><%= @team.title %></em></strong></h1>
+<h3><%= @team.description %></h3>
 <div class="row">
   <div class="col-md-12">
-    <div class="col-md-5">      
+    <div class="col-md-5">
     </div>
       <div class="col-md-1">
         <%= button_to new_team_okr_path(@team), method: :get, class: "btn btn-primary", title:"Criar OKR" do %>
@@ -42,20 +43,20 @@ td{
         <span class="glyphicon glyphicon-arrow-left"></span>
         <%end%>
       </div>
-    <div class="col-md-5">      
+    <div class="col-md-5">
     </div>
-  </div>  
+  </div>
 </div>
 <br>
 
 <div class="container-fluid">
   <div class="row">
-    
+
     <div class="col-md-12">
       <table class="table table-bordered">
         <thead>
           <tr>
-            
+
             <th class="nameokr">
               OKR
             </th>
@@ -73,9 +74,9 @@ td{
         </thead>
         <tbody>
           <% @team.okrs.each do |okr| %>
-          <tr>            
+          <tr>
             <td>
-              <strong><%= okr.title %></strong>
+              <strong><%= link_to okr.title, {:action => 'show', :id => okr.id}  %></strong>
             </td>
             <td>
               <%= simple_format(okr.description) %>
@@ -87,12 +88,12 @@ td{
               <%= link_to 'Mostrar', {:action => 'show', :id => okr.id}, class: "btn btn-default"%>
               <%= link_to 'Editar', {:action => 'edit', :id => okr.id}, class: "btn btn-default" %>
               <%= link_to 'Excluir', {:action => 'destroy', :id => okr.id}, method: :delete, data: { confirm: 'Tem certeza?' }, class: "btn btn-default" %>
-            </td>            
+            </td>
           </tr>
-          <%end%>          
+          <%end%>
         </tbody>
       </table>
     </div>
-    
+
   </div>
 </div>
