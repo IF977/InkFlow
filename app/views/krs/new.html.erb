@@ -1,7 +1,7 @@
 <div align="center"><h1>Novo KR</h1>
 
 <%= form_for ([@team, @okr, @okr.krs.build]) do |f| %>
-  
+
   <div class="field">
     <%= f.label :title %> <br>
     <%= f.text_field :title %>
@@ -13,9 +13,15 @@
   </div>
   <br>
 
-  <div class="field">        
+   <div class="field">
+    <%= f.label :progress %> <br>
+    <%= f.text_field :progress %>
+  </div>
+
+
+  <div class="field">
     <%= f.hidden_field :okr_id %>
-    <%= f.hidden_field :okr_id%>        
+    <%= f.hidden_field :okr_id%>
   </div>
 
 

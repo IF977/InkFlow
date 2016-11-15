@@ -6,6 +6,7 @@ class OkrsController < ApplicationController
   # GET /okrs.json
   def index
     @okrs = Okr.all
+
   end
 
   # GET /okrs/1
@@ -78,12 +79,14 @@ class OkrsController < ApplicationController
       @team = Team.find(params[:team_id])
     end
 
+
+
     def set_okr
       @okr = Okr.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def okr_params
-      params.require(:okr).permit(:title, :description, :team_id)
+      params.require(:okr).permit(:title, :description, :progress, :team_id)
     end
 end

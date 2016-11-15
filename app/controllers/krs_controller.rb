@@ -87,6 +87,6 @@ class KrsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kr_params
-      params.require(:kr).permit(:title, :howtoscore, :okr_id)
+      params.require(:kr).permit(:title, :howtoscore, :progress, :okr_id)
     end
 end
