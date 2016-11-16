@@ -23,6 +23,17 @@ td{
   width: 20%;
 }
 
+.progress {
+  position: relative;
+
+}
+.progress span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  color:purple;
+}
+
 </style>
 
 <!-- Cálculo do progresso de Okr-->
@@ -30,15 +41,21 @@ td{
 <% c = 0 %>
 <%@okr.krs.each do |i| %>
           <% c = c + i.progress %>
-
 <% end -%>
 <br>
-<% @okr.progress = c/contagem %>
-<%= @okr.progress %>
+<% if contagem != 0 %>
+<% progresso_okr = c/contagem %>
+<% elsif contagem == 0 %>
+<% progresso_okr = 0%>
+<% end -%>
+<% progresso_okr %>
 
+<div class="container-fluid">
 <h1><strong>Equipe: <em><%= @team.title %></em></strong></h1>
-<h1>OKR: <em><%= @okr.title %></em></h1> <br>
-<h1>Progresso de <%= @okr.title %>: <%= @okr.progress %>% </h1>
+<h1>OKR: <em><%= @okr.title %></em></h1>
+
+</div>
+
 
 <div class="row">
   <div class="col-md-12">
@@ -60,10 +77,14 @@ td{
 </div>
 <br>
 
-
-
-
 <div class="container-fluid">
+
+<div class="progress" >
+<div class="progress-bar progress-bar-striped active" role="progressbar"  style="width: <%= progresso_okr %>%">
+<strong><span> Progresso do OKR: <%= progresso_okr %>%</span></strong>
+</div>
+</div>
+
   <div class="row">
 
     <div class="col-md-12">
@@ -97,7 +118,11 @@ td{
               <%= simple_format(kr.howtoscore) %>
             </td>
             <td>
-              <%= kr.progress %>
+                        <div class="progress" align="center" >
+            <div class="progress-bar progress-bar-striped active" role="progressbar"  style="width: <%= kr.progress %>%">
+            <strong><span><%= kr.progress %>%</span></strong>
+            </div>
+            </div>
             </td>
             <td>
               <%= link_to 'Mostrar', {:action => 'show', :id => kr.id}, class: "btn btn-default"%>
