@@ -15,7 +15,7 @@
 						<h1><%= @okr.title %></h1>
 						<h2>Descrição:</h2>
 						<p><%= simple_format(@okr.description) %></p>
-						<p>Progresso: <%= progresso_okr %>%</p>
+						<p>Progresso: <%= progresso_okr(@okr) %>%</p>
 						<hr>
 						<div align="center">
 						<%= link_to 'Mostrar KR', team_okr_krs_path(@team, @okr), class: "btn btn-primary" %>
