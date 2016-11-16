@@ -22,11 +22,21 @@ td{
 .opcoesokr{
   width: 20%;
 }
+.progress {
+  position: relative;
+
+}
+.progress span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  color:purple;
+}
 
 </style>
 
 
-<%=  %>
+
 
 
 <h1><strong><em><%= @team.title %></em></strong></h1>
@@ -85,6 +95,9 @@ td{
             </td>
             <td>
 
+            <div class="progress" align="center" >
+            <div class="progress-bar progress-bar-striped active" role="progressbar"  style="width: <%= progresso_okr(okr) %>%">
+            <strong><span><%= progresso_okr(okr) %>%</span></strong>
             </td>
             <td>
               <%= link_to 'Mostrar', {:action => 'show', :id => okr.id}, class: "btn btn-default"%>

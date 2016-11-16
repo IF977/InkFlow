@@ -36,19 +36,8 @@ td{
 
 </style>
 
-<!-- Cálculo do progresso de Okr-->
-<% contagem = @krs.count %>
-<% c = 0 %>
-<%@okr.krs.each do |i| %>
-          <% c = c + i.progress %>
-<% end -%>
-<br>
-<% if contagem != 0 %>
-<% progresso_okr = c/contagem %>
-<% elsif contagem == 0 %>
-<% progresso_okr = 0%>
-<% end -%>
-<% progresso_okr %>
+
+
 
 <div class="container-fluid">
 <h1><strong>Equipe: <em><%= @team.title %></em></strong></h1>
@@ -80,8 +69,8 @@ td{
 <div class="container-fluid">
 
 <div class="progress" >
-<div class="progress-bar progress-bar-striped active" role="progressbar"  style="width: <%= progresso_okr %>%">
-<strong><span> Progresso do OKR: <%= progresso_okr %>%</span></strong>
+<div class="progress-bar progress-bar-striped active" role="progressbar"  style="width: <%= progresso_okr(@okr) %>%">
+<strong><span> Progresso do OKR: <%= progresso_okr(@okr) %>%</span></strong>
 </div>
 </div>
 
