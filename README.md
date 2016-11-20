@@ -1,3 +1,7 @@
+##Link heroku
+https://inkflow-ufpe.herokuapp.com/
+
+
 #InkFlow
 
 O projeto de uma Aplicação Web que veio para sanar o problema do NTI (Núcleo de Tecnologia da Informação) , e mais especificamente do nosso cliente Marlos Ribeiro. No último trimestre, o NTI adotou a metodologia OKR em seus projetos, e vêm enfrentando uma série de dificuldades na execução dos mesmos.
