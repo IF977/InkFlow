@@ -4,7 +4,9 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    @teams = Team.all
+
+    @teams = current_user.teams
+
   end
 
   # GET /teams/1
@@ -14,6 +16,7 @@ class TeamsController < ApplicationController
 
   # GET /teams/new
   def new
+    @team = current_user.teams.build
     @team = Team.new
   end
 
@@ -24,8 +27,9 @@ class TeamsController < ApplicationController
   # POST /teams
   # POST /teams.json
   def create
-    @team = Team.new(team_params)
 
+    @team = Team.new(team_params)
+    @team.user_id = current_user.id
     respond_to do |format|
       if @team.save
         format.html { redirect_to @team, notice: 'Team was successfully created.' }

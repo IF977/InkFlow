@@ -19,7 +19,7 @@ Equipes
 </strong></h1>
 
 <div align="center">
-<%if @teams.empty?%>
+<%if @current_user.teams.empty?%>
 <h2>Não existem equipes criadas para serem exibidas. Clique no botão abaixo para começar a criar.</h2>
 <%end%>
 <%= button_to new_team_path, method: :get, class: "btn btn-primary", title:"Criar Equipe" do %>

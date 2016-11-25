@@ -1,3 +1,4 @@
 class Team < ApplicationRecord
-	has_many :okrs, dependent: :destroy
+    belongs_to :user
+    has_many :okrs, dependent: :destroy
 end
