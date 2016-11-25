@@ -11,7 +11,9 @@
 						<hr>
 						<div align="center">
 						<%= link_to 'OKR', team_okrs_path(@team), class: "btn btn-primary" %>
+						<%if current_user.editor %>
 						<%= link_to 'Editar', edit_team_path(@team), class: "btn btn-primary" %> 
+						<%end%>
 						<%= link_to 'Voltar', teams_path, class: "btn btn-primary" %>
 						</div>
 

@@ -1,29 +1,27 @@
 
 
 
-<div class="row">
-	<h2><strong>
-		<%= @okr.title %>
-	</strong></h2>
-</div>
 
-<div class="container-fluid">
-	<div class="row">
+	
+
+<div class="row">
+	<div class="container-fluid">	
+		<h2><strong>OKR: <%= @okr.title %></strong></h2>
 		<div class="col-md-12">
 			<div class="col-md-2">			
 			</div>
 				<div class="col-md-8">
 					<div class="jumbotron well">
 						<h1><%= @kr.title %></h1>
-						<h2>Descrição:</h2>
-						<p><%= simple_format(@kr.howtoscore) %></p>
+						<p>How to score: <%= @kr.howtoscore %></p>						
+						<p><strong>Progesso do KR: <%= @kr.progress %>%</strong></p>
 						<hr>
 						<div align="center">
+						<%if current_user.editor %>
 						<%= link_to 'Editar', edit_team_okr_kr_path(@team, @okr, @kr), class: "btn btn-primary" %> 
+						<%end%>
 						<%= link_to 'Voltar', team_okr_krs_path, class: "btn btn-primary" %>
-						</div>
-
-						
+						</div>						
 					</div>
 				</div>
 			<div class="col-md-2">			

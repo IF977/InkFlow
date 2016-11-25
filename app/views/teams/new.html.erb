@@ -1,7 +1,17 @@
+
 <div align="center">
+<%if current_user.editor %>
+
+
 <h1>Nova Equipe</h1>
 
 <%= render 'form', team: @team %>
 
 <%= link_to 'Voltar', teams_path %>
+
+<%else%>
+<h2>Você não está autorizado a acessar o conteúdo dessa página.</h2>
+<%= link_to 'Voltar', teams_path %>
+<%end%>
+
 </div>

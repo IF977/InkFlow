@@ -1,5 +1,6 @@
 <div align="center">
-<h1>Editing Okr</h1>
+<%if current_user.editor%>
+<h1>Editar OKR</h1>
 
 <%= form_for([@team, @okr]) do |f| %>
 
@@ -19,10 +20,12 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Atualizar OKR" %>
+    <%= f.submit "Atualizar OKR", class: "btn btn-primary"  %>
   </div>
 <% end %>
-
-
 <%= link_to 'Back', team_okrs_path %>
+<%else%>
+<h2>Você não está autorizado a acessar o conteúdo dessa página.</h2>
+<%= link_to 'Voltar', team_okrs_path %>
+<%end%>
 </div>

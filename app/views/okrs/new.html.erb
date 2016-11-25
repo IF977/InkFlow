@@ -1,4 +1,5 @@
 <div align="center">
+<%if current_user.editor %>
 <h1>Novo OKR</h1>
 
 <%= form_for([@team, @team.okrs.build]) do |f| %>
@@ -19,9 +20,14 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Criar OKR" %>
+    <%= f.submit "Criar OKR", class: "btn btn-primary"  %>
   </div>
 <% end %>
 
 <%= link_to 'Voltar', team_okrs_path %>
+<%else%>
+<h2>Você não está autorizado a acessar o conteúdo dessa página.</h2>
+<%= link_to 'Voltar', team_okrs_path %>
+<%end%>
+
 </div>

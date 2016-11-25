@@ -41,7 +41,7 @@ td{
 
 <div class="container-fluid">
 <h1><strong>Equipe: <em><%= @team.title %></em></strong></h1>
-<h1>OKR: <em><%= @okr.title %></em></h1>
+<h2>OKR: <em><%= @okr.title %></em></h2>
 
 </div>
 
@@ -115,8 +115,11 @@ td{
             </td>
             <td>
               <%= link_to 'Mostrar', {:action => 'show', :id => kr.id}, class: "btn btn-default"%>
-              <%= link_to 'Editar', {:action => 'edit', :id => kr.id}, class: "btn btn-default" %>
+              <% if current_user.editor %>
+              <%= link_to 'Editar', {:action => 'edit', :id => kr.id}, class: "btn btn-default" %>              
               <%= link_to 'Excluir', {:action => 'destroy', :id => kr.id}, method: :delete, data: { confirm: 'Tem certeza?' }, class: "btn btn-default" %>
+              <%end%>
+            
             </td>
           </tr>
           <%end%>

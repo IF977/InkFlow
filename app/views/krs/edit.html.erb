@@ -1,36 +1,43 @@
 <div align="center">
-<h1>Editar KR</h1>
+  <%if current_user.editor%>
 
-<%= form_for ([@team, @okr, @kr]) do |f| %>
+  <h1>Editar KR</h1>
 
-  <div class="field">
-    <%= f.label :title %> <br>
-    <%= f.text_field :title %>
-  </div>
+  <%= form_for ([@team, @okr, @kr]) do |f| %>
 
-   <br>
-  <div class="field">
-    <%= f.label :howtoscore %> <br>
-    <%= f.text_area :howtoscore, cols: "50", rows: "10" %>
-  </div>
-  <br>
+    <div class="field">
+      <%= f.label :title %> <br>
+      <%= f.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= f.label :progress %> <br>
-    <%= f.text_field :progress %>
-  </div>
+     <br>
+    <div class="field">
+      <%= f.label :howtoscore %> <br>
+      <%= f.text_area :howtoscore, cols: "50", rows: "10" %>
+    </div>
+    <br>
 
-  <div class="field">
-    <%= f.hidden_field :okr_id%>
-    <%= f.hidden_field :okr_id%>
-  </div>
+    <div class="field">
+      <%= f.label :progress %> <br>
+      <%= f.select :progress, ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'], {}, class:"btn btn-default dropdown-toggle" %>%
+    </div>
+    
+
+    <div class="field">
+      <%= f.hidden_field :okr_id%>
+      <%= f.hidden_field :okr_id%>
+    </div>
+
+    <br>
+    <div class="actions">
+      <%= f.submit "Atualizar KR", class:"btn btn-primary"  %>
+    </div>
+  <% end %>
 
 
-  <div class="actions">
-    <%= f.submit "Atualizar KR", class:"btn btn-primary"  %>
-  </div>
-<% end %>
-
-
-<%= link_to 'Back', team_okr_krs_path %>
+  <%= link_to 'Back', team_okr_krs_path %>
+  <%else%>
+  <h2>Você não está autorizado a acessar o conteúdo dessa página.</h2>
+  <%= link_to 'Voltar', team_okr_krs_path %>
+  <%end%>
 </div>

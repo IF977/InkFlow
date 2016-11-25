@@ -1,4 +1,7 @@
-<div align="center"><h1>Novo KR</h1>
+<div align="center">
+
+<% if current_user.editor%>
+<h1>Novo KR</h1>
 
 <%= form_for ([@team, @okr, @okr.krs.build]) do |f| %>
 
@@ -14,16 +17,16 @@
   <br>
 
    <div class="field">
-    <%= f.label :progress %> <br>
-    <%= f.text_field :progress %>
+    <%= f.label :porcentagem_de_progresso %> <br>
+    <%= f.select :progress, ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'], {}, class:"btn btn-default dropdown-toggle" %>%
   </div>
 
 
   <div class="field">
     <%= f.hidden_field :okr_id %>
-    <%= f.hidden_field :okr_id%>
+    <%= f.hidden_field :okr_id %>
   </div>
-
+  <br>
 
   <div class="actions">
     <%= f.submit "Criar KR", class:"btn btn-primary" %>
@@ -31,4 +34,8 @@
 <% end %>
 
 <%= link_to 'Voltar', team_okr_krs_path %>
+<%else%>
+<h2>Você não está autorizado a acessar o conteúdo dessa página.</h2>
+<%= link_to 'Voltar', team_okr_krs_path %>
+<%end%>
 </div>

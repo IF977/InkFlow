@@ -1,12 +1,9 @@
 
-<div class="row">
-	<h2><strong>
-		<%= @team.title %>
-	</strong></h2>
-</div>
+
 
 <div class="container-fluid">
 	<div class="row">
+		<h2><strong>Equipe: <%= @team.title %></strong></h2>
 		<div class="col-md-12">
 			<div class="col-md-2">
 			</div>
@@ -15,11 +12,13 @@
 						<h1><%= @okr.title %></h1>
 						<h2>Descrição:</h2>
 						<p><%= simple_format(@okr.description) %></p>
-						<p>Progresso: <%= progresso_okr(@okr) %>%</p>
+						<p><strong>Progresso do OKR: <%= progresso_okr(@okr) %>%</strong></p>
 						<hr>
 						<div align="center">
 						<%= link_to 'Mostrar KR', team_okr_krs_path(@team, @okr), class: "btn btn-primary" %>
+						<%if current_user.editor %>
 						<%= link_to 'Editar', edit_team_okr_path(@team, @okr), class: "btn btn-primary" %>
+						<%end%>
 						<%= link_to 'Voltar', team_okrs_path, class: "btn btn-primary" %>
 						</div>
 
