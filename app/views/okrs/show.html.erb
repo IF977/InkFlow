@@ -10,8 +10,7 @@
 				<div class="col-md-8">
 					<div class="jumbotron well">
 						<h1><%= @okr.title %></h1>
-						<h2>Descrição:</h2>
-						<p><%= simple_format(@okr.description) %></p>
+						<p><strong>Descrição:</strong><em> <%=@okr.description %></em></p>							
 						<p><strong>Progresso do OKR: <%= progresso_okr(@okr) %>%</strong></p>
 						<hr>
 						<div align="center">

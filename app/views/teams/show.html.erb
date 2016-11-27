@@ -6,8 +6,7 @@
 				<div class="col-md-8">
 					<div class="jumbotron well">
 						<h1><%= @team.title %></h1>
-						<h2>Descrição:</h2>
-						<p><%= simple_format(@team.description) %></p>
+						<p><strong>Descrição:</strong><em> <%=@team.description %></em></p>						
 						<hr>
 						<div align="center">
 						<%= link_to 'OKR', team_okrs_path(@team), class: "btn btn-primary" %>
@@ -15,9 +14,7 @@
 						<%= link_to 'Editar', edit_team_path(@team), class: "btn btn-primary" %> 
 						<%end%>
 						<%= link_to 'Voltar', teams_path, class: "btn btn-primary" %>
-						</div>
-
-						
+						</div>						
 					</div>
 				</div>
 			<div class="col-md-2">			

@@ -41,7 +41,7 @@ Equipes
     <div class="col-md-4" >
       <div class="panel panel-default">
           <div class="panel-heading">
-             <h4><strong><a href="/teams/<%=team.id%>/okrs"><%=  team.title %></a></strong></h4>
+             <h4><strong><a href="/teams/<%=team.id%>"><%=  team.title %></a></strong></h4>
           </div>
           <div class="panel-collapse collapse in">
             <div class="panel-body">
@@ -51,7 +51,7 @@ Equipes
         <div class="panel-footer">
         <div class="row">
         <div class="col-md-12">
-        <div class="col-md-9">
+        <div class="col-md-9">          
         </div>
         <div class="col-md-1">
         <%= button_to team_okrs_path(team), method: :get, class: "btn btn-default", title:"Entrar na Equipe" do %>

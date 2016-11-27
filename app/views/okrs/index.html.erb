@@ -51,7 +51,7 @@ td{
         <%end%>
       </div>
       <div class="col-md-1">
-        <%= button_to teams_path, method: :get, class: "btn btn-info", title:"Index Times" do %>
+        <%= button_to teams_path, method: :get, class: "btn btn-info", title:"Equipes" do %>
         <span class="glyphicon glyphicon-arrow-left"></span>
         <%end%>
       </div>
@@ -100,7 +100,7 @@ td{
             <strong><span><%= progresso_okr(okr) %>%</span></strong>
             </td>
             <td>
-              <%= link_to 'Mostrar', {:action => 'show', :id => okr.id}, class: "btn btn-default"%>
+              <%= link_to 'KR', team_okr_krs_path(@team, @okr), class: "btn btn-default"%>
               <%if current_user.editor%>
               <%= link_to 'Editar', {:action => 'edit', :id => okr.id}, class: "btn btn-default" %>
               <%= link_to 'Excluir', {:action => 'destroy', :id => okr.id}, method: :delete, data: { confirm: 'Tem certeza?' }, class: "btn btn-default" %>
