@@ -31,5 +31,5 @@ O foco do projeto é garantir uma solução de design simples, elegante e objeti
 
 #Comentários sobre a cadeira de Engenharia de Software
 
-    Arthur Nascimento de Farias
+   Arthur Nascimento de Farias
     Ao término dessa cadeira pude perceber que  o mundo da programação se trata de um ambiente realmente muito grande, onde as especialidades de cada desenvolvedor/programador contam muito para formar uma equipe. Como um primeiro contato em desenvolvimento de qualquer coisa, considero que o aprendizado foi imenso! Acho uma pena não ter conseguido dedicar mais tempo à prosperidade da aplicação, pois trabalho fora e as outras cadeiras também ocupam espaço na agenda. Tenho em mente que aprendi bastante com a cadeira e que esse primeiro contato com o meio de desenvolvimento foi bastante proveitoso e o conhecimento agregado foi enorme. Quanto às prova da cadeira assumo que, pelo menos pra mim, alguns conteúdos não ficaram muito claros, não sei se foi erro meu na forma de absorção da informação ou algum problema na exposição do assunto. 
