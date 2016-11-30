@@ -1,3 +1,10 @@
+<div align="center">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/teams">Equipes</a></li>
+    <li class="breadcrumb-item active"><strong>Equipe: <em><%=@team.title%></em></strong></li>
+  </ol>
+</div>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -6,7 +13,7 @@
 				<div class="col-md-8">
 					<div class="jumbotron well">
 						<h1><%= @team.title %></h1>
-						<p><strong>Descrição:</strong><em> <%=@team.description %></em></p>						
+						<p><strong>Descrição:</strong><em> <%=simple_format(@team.description) %></em></p>						
 						<hr>
 						<div align="center">
 						<%= link_to 'OKR', team_okrs_path(@team), class: "btn btn-primary" %>

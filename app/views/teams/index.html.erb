@@ -12,18 +12,20 @@ a:hover {
     color: white;
 }
 </style>
+<div align="center">
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active"><strong>Equipes</strong></li>
+</ol>
+</div>
 
-<div>
-<h1><strong>
-Equipes
-</strong></h1>
 
 <div align="center">
 <%if @teams.empty?%>
 <h2>Não existem equipes criadas para serem exibidas. Clique no botão abaixo para começar a criar.</h2>
 <%end%>
+<h5>Criar Equipe</h5>
 <%= button_to new_team_path, method: :get, class: "btn btn-primary", title:"Criar Equipe" do %>
-<span class="glyphicon glyphicon-plus-sign"></span>
+<span class="glyphicon glyphicon-plus"></span>
 <%end%>
 
 </div>
@@ -59,16 +61,15 @@ Equipes
         <%end%></div>
         <%if current_user.editor%>
         <div class="col-md-1">
-        <%= button_to edit_team_path(team), method: :get, class: "btn btn-default", title:"Editar Equipe" do  %>
-        <span class="glyphicon glyphicon-pencil"></span>
-        <%end%> </div>
+          <%= button_to edit_team_path(team), method: :get, class: "btn btn-default", title:"Editar Equipe" do  %>
+          <span class="glyphicon glyphicon-pencil"></span>
+          <%end%> 
+        </div>
         
-        <div class="col-md-1">
-        
+        <div class="col-md-1">        
           <%= button_to team, method: :delete, class: "btn btn-default", data: { confirm: 'Tem certeza?' }, title:"Remover Equipe"  do%>
-          <span class="glyphicon glyphicon-remove"></span>
-          <%end%>
-        
+          <span class="glyphicon glyphicon-trash"></span>
+          <%end%>        
         </div>
         <%end%>
         </div>

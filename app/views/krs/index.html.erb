@@ -38,11 +38,13 @@ td{
 
 
 
-
-
-<h1><strong>Equipe: <em><%= @team.title %></em></strong></h1>
-<h2>OKR: <em><%= @okr.title %></em></h2>
-
+<div align="center">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/teams">Equipes</a></li>
+    <li class="breadcrumb-item "><a href="/teams/<%=@team.id%>/okrs">Equipe: <em><%=@team.title%></em></a></li>
+    <li class="breadcrumb-item active"><strong>OKR: <em><%=@okr.title%></em></strong></li>
+  </ol>
+</div>
 
 
 
@@ -50,12 +52,14 @@ td{
   <div class="col-md-12">
     <div class="col-md-5">
     </div>
-      <div class="col-md-1">
+      <div class="col-md-1" align="center">
+        <h5>Criar KR</h5>
         <%= button_to new_team_okr_kr_path(@team, @okr), method: :get, class: "btn btn-primary", title:"Criar OKR" do %>
-        <span class="glyphicon glyphicon-plus-sign"></span>
+        <span class="glyphicon glyphicon-plus"></span>
         <%end%>
       </div>
-      <div class="col-md-1">
+      <div class="col-md-1" align="center">
+        <h5>Voltar</h5>
         <%= button_to team_okrs_path, method: :get, class: "btn btn-info", title:"OKR" do %>
         <span class="glyphicon glyphicon-arrow-left"></span>
         <%end%>

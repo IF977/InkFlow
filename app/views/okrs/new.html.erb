@@ -1,11 +1,18 @@
 <div align="center">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/teams">Equipes</a></li>
+    <li class="breadcrumb-item active"><strong>Equipe: <em><%=@team.title%></em></strong></li>
+  </ol>
+</div>
+
+<div align="center">
 <%if current_user.editor %>
 <h1>Novo OKR</h1>
 
 <%= form_for([@team, @team.okrs.build]) do |f| %>
 
  <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :título %><br>
     <%= f.text_field :title %>
   </div>
   <br>

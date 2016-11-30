@@ -1,16 +1,21 @@
-
+<div align="center">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/teams">Equipes</a></li>
+    <li class="breadcrumb-item "><a href="/teams/<%=@team.id%>/okrs">Equipe: <em><%=@team.title%></em></a></li>
+    <li class="breadcrumb-item active"><strong>OKR: <em><%=@okr.title%></em></strong></li>
+  </ol>
+</div>
 
 
 <div class="container-fluid">
-	<div class="row">
-		<h2><strong>Equipe: <%= @team.title %></strong></h2>
+	<div class="row">		
 		<div class="col-md-12">
 			<div class="col-md-2">
 			</div>
 				<div class="col-md-8">
 					<div class="jumbotron well">
 						<h1><%= @okr.title %></h1>
-						<p><strong>Descrição:</strong><em> <%=@okr.description %></em></p>							
+						<p><strong>Descrição:</strong><em> <%=simple_format(@okr.description) %></em></p>							
 						<p><strong>Progresso do OKR: <%= progresso_okr(@okr) %>%</strong></p>
 						<hr>
 						<div align="center">
@@ -20,8 +25,6 @@
 						<%end%>
 						<%= link_to 'Voltar', team_okrs_path, class: "btn btn-primary" %>
 						</div>
-
-
 					</div>
 				</div>
 			<div class="col-md-2">

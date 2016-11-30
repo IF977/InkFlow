@@ -1,4 +1,11 @@
 <div align="center">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/teams">Equipes</a></li>
+    <li class="breadcrumb-item active"><strong>Equipe: <em><%=@team.title%></em></strong></li>
+  </ol>
+</div>
+
+<div align="center">
 <%if current_user.editor %>
 <h1>Editar Equipe</h1>
 

@@ -34,23 +34,26 @@ td{
 }
 
 </style>
+<div align="center">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/teams">Equipes</a></li>
+    <li class="breadcrumb-item active"><strong>Equipe: <em><%=@team.title%></em></strong></li>
+  </ol>
+</div>
 
-
-
-
-
-<h1><strong><em>Equipe: <%= @team.title %></em></strong></h1>
 
 <div class="row">
   <div class="col-md-12">
     <div class="col-md-5">
     </div>
-      <div class="col-md-1">
+      <div class="col-md-1" align="center">
+        <h5>Criar OKR</h5>
         <%= button_to new_team_okr_path(@team), method: :get, class: "btn btn-primary", title:"Criar OKR" do %>
-        <span class="glyphicon glyphicon-plus-sign"></span>
+        <span class="glyphicon glyphicon-plus"></span>
         <%end%>
       </div>
-      <div class="col-md-1">
+      <div class="col-md-1" align="center">
+        <h5>Voltar</h5>
         <%= button_to teams_path, method: :get, class: "btn btn-info", title:"Equipes" do %>
         <span class="glyphicon glyphicon-arrow-left"></span>
         <%end%>
